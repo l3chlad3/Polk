@@ -1,0 +1,1245 @@
+The Day Destroys the Night,
+Night Extends the Day:
+A Clientele Perspective on Equity Premium Variation
+Dong Lou, Christopher Polk, and Spyros Skouras∗
+This version: November 2022
+∗Lou: Department of Finance, London School of Economics, London WC2A 2AE, UK and CEPR. Email:
+d.lou@lse.ac.uk. Polk: Department of Finance, London School of Economics, London WC2A 2AE, UK
+and CEPR. Email: c.polk@lse.ac.uk. Skouras: Athens University of Economics and Business. Email:
+skouras@aueb.gr. We thank John Campbell, Dimitri Vayanos, Tuomo Vuolteenaho, and seminar and conference participants at Amsterdam Business School, the Bristol Financial Markets Conference, the London
+School of Economics, the 2021 CRETE conference, and the 2022 NBER Asset Pricing Summer Institute for
+helpful comments. We thank Ken French for sharing data used in the analysis. Financial support from the
+Paul Woolley Centre at the LSE is gratefully acknowledged. We also thank The Doors for inspiring our
+paper’s title.
+The Day Destroys the Night,
+Night Extends the Day:
+A Clientele Perspective on Equity Premium Variation
+Abstract
+We decompose market returns into their overnight and intraday components, which dramatically improves equity premium forecasts. Past smoothed overnight market returns strongly
+negatively forecast subsequent close-to-close returns (quarterly R2 of over 14%), primarily through intraday mean reversion. In contrast, past smoothed intraday market returns
+strongly positively forecast subsequent overnight returns; this partially-offsetting effect explains PE’s relatively poor forecasting ability (R2 only 3%). Our decomposition also resurrects the conditional CAPM: If we allow market betas to vary with past smoothed overnight
+returns, the four Fama-French factors’ alphas decrease on average by 84%. We interpret these
+return patterns through a clientele perspective. First, individual investor expectations and
+consumption growth strongly positively forecast overnight market returns, while intermediary risk tolerance strongly negatively forecasts intraday market returns. Second, aggregate
+cash-flow news occurs primarily intraday and is positively (negatively) correlated with revisions in expected future overnight (intraday) returns. Finally, while the Tech boom, Covid
+crash/rebound, and patterns in meme stocks were primarily driven by overnight returns, the
+Global Financial Crisis was mostly an intraday phenomenon.
+JEL classification: G02, G12, G23, N22
+1 Introduction
+Our understanding of financial markets has evolved in the last few decades to recognize the
+potential importance of investor heterogeneity, whether it might be modeling conservative vs.
+aggressive investors (Wang (1996)), noise traders vs. smart money (De Long, Shleifer, Summers, and Waldmann (1990)), or individuals vs. institutions (Gabaix and Koijen (2022)).
+Though such heterogeneity is likely important for asset prices, researchers are hamstrung by
+the fact that the return data we typically study reflect just the net effect of the clienteles in
+play. This paper exploits the fact that different types of investors likely prefer to trade or
+hold stocks at different points in times, which allows us to empirically characterize investor
+heterogeneity. For example, some investors may prefer to trade at or near the morning open,
+while others may prefer to trade near the close.
+Of course, these two periods differ along several key dimensions, including information
+flow, market liquidity, and borrowing costs. It seems likely that many aspects of investor
+heterogeneity that might be relevant for asset pricing also manifest as a tendency to trade
+in one of these periods rather than the other. In this light, the presence of “overnight” and
+“intraday” clienteles seems a reasonable and perhaps even natural view of markets.
+We use this clientele perspective along with the distinction between overnight vs. intraday
+returns to shed new light on time variation in the equity premium. In particular, we argue
+that the overnight and intraday components of market returns reflect, at least in part, the
+demand of the clientele that is dominant in trading around the open and close respectively,
+and thus can be used to reveal characteristics of each clientele.
+We first decompose variation in P E based on past intraday and overnight price movements by smoothing these components of past returns.1 Our main analysis then uses these
+smoothed variables to forecast subsequent close-to-close returns, revealing much stronger
+mean reversion in the equity premium. In our sample, P E’s relation to subsequent close-to1We confirm that smoothed past overnight returns and smoothed past intraday returns explain a significant portion (77%) of the variation in P E. Adding past smoothed earnings growth increases that to 88%.
+However, the earnings growth component of variation in P E has no ability to predict subsequent returns.
+1
+close returns is weak at best (R2 of just 3%). However, isolating the variation in P E due to
+smoothed past overnight returns provides nearly five times the forecasting ability (R2 over
+14%).
+We then decompose the dependent variable in these forecasting regressions to better
+understand the drivers of the variation in close-to-close equity premium. We first find that
+mean reversion in the equity premium linked to the smoothed price-earnings ratio (P E)
+occurs entirely intraday and is, in fact, a much stronger phenomenon in the intraday period,
+as there is economically and statistically significant mean aversion linked to P E that occurs
+overnight and partially offsets the intraday mean reversion. These initial results suggest
+(which we support with a bevy of additional subsequent tests) that the overnight clientele is
+more responsible for the mean aversion (extrapolation) component that pushes prices away
+from fundamentals (because of changes in risk tolerance / sentiment) while the intraday
+clientele is more responsible for the mean reversion component.
+When we forecast these two market return components with the overnight and intraday
+components of our P E decomposition, we find striking results. Mean reversion in the stock
+market is primarily intraday reversion to past overnight returns; in other words, a “day
+destroys the night” phenomenon. In a regression of intraday returns on past smoothed
+overnight and intraday returns, the coefficient on the former is negative with a t-statistic of
+-5.67 and an R2 of roughly 13%.
+In contrast, P E positively forecasts overnight returns because there is strong continuation
+of past smoothed intraday returns that happens overnight (thus, a “night extends the day”
+phenomenon). In a regression of overnight returns on past smoothed overnight and intraday
+returns, the coefficient on the latter is positive with a t-statistic of 3.96 and an R2 over 22%.
+We then use our striking predictability results to reexamine the conditional CAPM. We
+document that a large portion of the CAPM alpha of the four Fama-French factors (SMB,
+HML, RMW, and CMW) is explained by conditional CAPM beta. Over our sample, the
+unconditional CAPM alpha on an equal-weight portfolio of those four factors is 3.35%/year.
+2
+Allowing the CAPM beta of that portfolio to vary with the past smoothed overnight market
+return reduces the unconditional abnormal return to 0.55%/year, a percentage drop of more
+than 84%.2 This result arises because a one-standard-deviation decline in the past smoothed
+overnight market return (which we show forecasts an increase in the equity premium of more
+than five percentage points) also forecasts an increase in CAPM beta of 0.2. Thus, the
+conditional CAPM does explain the unconditional returns of the Fama-French asset-pricing
+anomalies over these two decades, in contrast to the conclusion of Lewellen and Nagel (2006)
+and a testament to the importance of our overnight / intraday decomposition of P E.
+Nevertheless, though the unconditional alpha is close to zero after allowing CAPM betas
+to vary with the past smoothed overnight market return, once we allow the conditional
+alpha of this portfolio to move with the past smoothed overnight market return as well, we
+find that a one-standard-deviation increase in our overnight variable forecasts an increase
+in the conditional CAPM alpha of the composite Fama-French non-market factor portfolio
+of 2.9%/year. Thus, our novel decomposition ultimately reveals rich conditional mispricing
+relative to a conditional CAPM that may facilitate a better understanding of the underlying
+economics driving the Fama-French five-factor model.
+Momentum still breaks the conditional CAPM. Interestingly, we do find strong movement
+in momentum’s market beta linked to past intraday returns; however, since this component
+does not predict the equity premium, momentum’s conditional CAPM alpha does not materially change. Furthermore, once we allow the conditional alpha of the momentum portfolio
+to vary with past smoothed intraday returns as well, we find that a one-standard-deviation
+increase in our intraday variable forecasts an increase in the conditional CAPM alpha of the
+momentum portfolio of roughly 7%/year.
+Our ability to forecast the market is not only statistically and economically significant
+2As we estimate conditional time-series factor regressions, our findings are not subject to the critique
+of Lewellan and Nagel (2006) that previous conditional cross-sectional CAPM tests (like Jagannathan and
+Wang, 1996 and Lettau and Ludvigson, 2001) ignore important restrictions on their tests’ cross-sectional
+slopes.
+3
+but also is robust to an out-of-sample analysis.3 A simple strategy that times the market
+based on the smoothed overnight return produces a CAPM alpha of 2.1% per quarter with
+an associated t-statistic of 2.75. Including the five non-market factors of Fama and French
+(2015) and Carhart (1997) results in an alpha of 1.4% per quarter with a t-statistic of 3.16.
+This strategy continues to earn an economically and statistically significant six-factor alpha
+of 1% per quarter (t-statistic of 2.43) on an out-of-sample basis (where the parameters are
+estimated using an expanding window).
+Interpreting this predictability from a clientele perspective naturally leads to the question
+of how overnight and intraday clienteles differ. We characterize these clienteles in four
+ways: First, we analyze the relation of each return component with investor expectations
+from survey data. Second, we analyze the relation of each return component with standard
+macro-finance variables. Third, we examine the Tech boom/bust, the Global Financial Crisis
+(GFC), and the Covid crash/rebound through our clientele lens. Finally, we split aggregate
+close-to-close discount rate news into two components reflecting revisions in future overnight
+and intraday expected returns and then measure the way those two components move with
+aggregate close-to-close cash-flow news.
+Our analysis of Greenwood and Shleifer’s (2014) investor expectations reveals novel facts.
+In particular, we find that their main observation that individual investors extrapolate past
+returns reflects extrapolation of smoothed intraday returns, as smoothed overnight returns
+have very little explanatory power, either alone or in tandem. Further consistent with
+our extrapolation story, we find that individual investor expectations positively forecast
+subsequent overnight market returns but have no information about future intraday returns.
+As our predictability results imply that intraday returns are primarily driven by cash-flow
+news (as our modified Campbell (1991) return decomposition confirms), these findings are
+consistent with investors overreacting to news about fundamentals, rather than realized
+3All our empirical findings are also robust to controls for a host of well-known forecasting variables,
+including, for example, realized volatility; the term, default, and value premia; and the consumption-wealth
+ratio of Lettau and Ludvigson (2001).
+4
+returns. Thus, our results help flesh out why Greenwood and Shleifer (2014) find that
+individual investor expectations are strongly negatively correlated with statistical-modelbased expected close-to-close returns. Our results also address the on-going debate in the
+behavioral finance literature as to whether investors extrapolate fundamentals or returns
+when forming their biased beliefs.4
+Our macro-finance analysis also yields interesting results. A generation of financial
+economists has tried to link consumption growth to close-to-close market returns, but with
+little empirical success. However, our novel decomposition reveals a strong link between
+consumption growth and overnight returns. Past consumption growth forecasts subsequent
+overnight returns with a t-statistic of 4.88. In contrast, consumption growth has a negative
+and insignificant relation to subsequent intraday returns.5 We also find that our Intermediary Risk Tolerance measure that accumulates the shocks of Adrian et al. (2014) strongly
+negatively forecasts intraday market returns.
+In sum, the return predictability results based on individual investor expectations, as
+well as those results based on our macro-finance variables, all support the notion that mean
+aversion primarily occurs overnight (both individual investor expectations and consumption
+growth positively predict overnight market returns), while mean reversion primarily occurs
+intraday (intermediary risk tolerance negatively forecasts intraday market returns). As such,
+our findings point to different clienteles operating in the overnight and intraday periods, with
+the former having characteristics typically associated with households and the latter having
+characteristics typically associated with institutions.
+We then zoom in on three bubble/crisis episodes in the last three decades. We show that
+4Some researchers model the formulation of beliefs as the extrapolation of fundamentals (Barberis,
+Shleifer, and Vishny (1998); Rabin and Vayanos (2010); Fuster, Hebert, and Laibson (2012); and Bordalo, Gennaioli, and Shleifer (2018)), while others model belief formulation as price/return extrapolation
+(De Long, Shleifer, Summers, and Waldmann (1990); Hong and Stein (1999); Barberis, Greenwood, Jin,
+and Shleifer (2018); Farhi and Werning (2020); and Bastianello and Fontanier (2022a,b)). Fontanier (2022)
+argues that distinguishing between these two different ways in which investor beliefs may be biased matters
+for determining the appropriate policy response.
+5
+Indeed, we show that consumption growth not only predicts but also is contemporaneously correlated
+with overnight returns. These links are evident at leads/lags of up to 2 quarters.
+5
+the Tech boom of the late 1990s and the Covid crash and rebound of 2020 were primarily
+an overnight phenomenon, consistent with the view that individual investors were largely
+responsible for these events. In a similar fashion, we show that the large price spikes in
+meme stocks were primarily an overnight phenomenon. In contrast, the Global Financial
+Crisis of 2008 was primarily an intraday phenomenon, consistent with the important role
+intermediaries played during that market dislocation. Our findings for the Tech and GFC
+episodes are consistent with the analysis of Campbell, Giglio, and Polk (2013) who argue
+that the former was a boom/bust primarily driven by discount rates while the latter was
+primarily a cash-flow-news event.
+Finally, we summarize our findings using a VAR and a modified version of the return decomposition of Campbell (1991). Specifically, we decompose aggregate close-to-close
+discount-rate news into news about future expected intraday and overnight components of
+market returns. Consistent with our clientele interpretation, news about future expected
+overnight (intraday) returns is positively (negatively) correlated with cash-flow news. In
+other words, when good news about fundamentals arrives, the overnight clientele continues
+to push prices in the direction of that cash-flow news, resulting in a positive correlation with
+fundamentals. The intraday clientele then pulls prices back, hence the negative correlation.
+Moreover, and also in line with our interpretation, we find that intraday returns are driven
+primarily by cash-flow news while overnight returns are driven mostly by discount-rate news.
+In summary, all four approaches we take to characterize those two clienteles point in
+the same direction: The overnight clientele displays risk tolerance variation and behavioral
+characteristics typically associated with households, and the intraday clientele displays the
+type of risk tolerance variation associated with institutions. This set of observations dovetails with evidence presented in Lou, Polk, and Skouras (LPS 2019), in the context of the
+cross-section of average firm-level overnight and intraday stock returns; households are key
+members of the overnight clientele and institutions trade more aggressively during the day.
+The organization of our paper is as follows. Section 2 briefly summarizes existing litera6
+ture. Section 3 describes the data and empirical methodology. Section 4 presents our main
+results on time-series variation in the equity premium. Section 5 provides our key pricing
+results, including results from a conditional CAPM that prices the unconditional returns
+of the four Fama-French non-market factors. Section 6 presents evidence supporting our
+interpretation of the findings. Section 7 concludes.
+2 Related Literature
+LPS are the first to link investor heterogeneity to the persistence of the overnight and intraday components of firm-level returns. Their work documents strong firm-level return continuation across both the overnight and intraday return components, i.e. an own-component
+continuation effect, along with an offsetting cross-component reversal effect. Consistent with
+the interpretation that these effects represent important and persistent investor clienteles,
+LPS show that the return predictability they find lasts for years. In contrast to LPS, at the
+aggregate level, we find no own-component continuation, if anything there is some evidence
+of own-component reversal. Moreover, the aggregate cross component lead-lag effect is asymmetric: Smoothed past overnight returns forecast intraday return reversals, while smoothed
+past intraday returns forecast overnight return continuation. Therefore, the equity premium
+predictability studied here is distinct from the cross-sectional patterns documented in earlier
+research.
+The idea that institutions and individuals represent important heterogeneity in asset markets goes back to at least Gompers and Metrick (2001). Early work by Cohen (2003) uses
+flow of funds data to show that the equity allocations of individuals are cyclical while institutions keep a roughly constant allocation to equities over time. More recently, Greenwood
+and Shleifer (2014) show that investor expectations are strongly negatively correlated with
+model-based expected returns while Ben-Rephael, Kandel, and Wohl (2012) show that net
+exchanges by households between bond and equity retail mutual funds within the same fund
+7
+family negatively forecast future market excess returns. Cohen, Gompers, and Vuolteenaho
+(2002) document that institutions buy shares from (sell shares to) individuals in response to
+positive (negative) cash-flow news. Conversely, individuals buy shares from (sell shares to)
+institutions in response to negative (positive) discount-rate news.
+Our paper also relates to the literature studying fund flows and market dynamics. Warther
+(1995) and Edelen and Warner (2001) find a positive relationship between aggregate mutual
+fund flows and concurrent monthly, weekly, or daily market returns. Vayanos and Woolley
+(2013) and Gabaix and Koijen (2022) study asset pricing consequences of flows when there
+are financial frictions. Similarly, Lou and Polk (2022) argue that the actions of momentum
+traders can be destabilizing, pushing prices away from fundamental value.
+3 Data and Methodology
+Our core US sample spans the period 1993 to 2019, constrained by the availability of TAQ
+data.
+3.1 Measuring Overnight and Intraday Components
+To decompose the close-to-close return into its overnight and intraday components, we use
+the volume-weighted average price (VWAP) in the first half hour of trading (9:30 am - 10:00
+am) for the SPDR S&P 500 Trust ETF, as reported in TAQ.6 We rely on VWAP to ensure
+that our open prices are robust.
+We define the intraday return, r
+MKT
+intraday,s, as the price appreciation between market open
+and close of the same day s, and impute the overnight return, r
+MKT
+overnight,s, based on this
+6We have also verified that our results are robust to using open prices from other sources: a) open prices
+as reported by the Center for Research in Security Prices (CRSP) which also starts in 1993 (since their data
+are sourced from TAQ), b) the first trade price from TAQ, and c) the midpoint of the quoted bid-ask spread
+at the open from TAQ. We have also confirmed that our main predictability results are robust to using the
+open prices on a broad bottom-up market proxy rather than the SP 500 ETF. When doing so, to safeguard
+against the possibility that our VWAP may be driven by very small orders, we exclude observations where
+there are fewer than 1000 shares traded in the first half hour (we have also checked that our results are not
+sensitive to this restriction).
+8
+intraday return and the standard daily close-to-close return, r
+MKT
+close−to−close,s,
+r
+MKT
+intraday,s =
+P
+MKT
+close,s
+P MKT
+open,s
+− 1,
+r
+MKT
+overnight,s =
+1 + r
+MKT
+close−to−close,s
+1 + r
+MKT
+intraday,s
+− 1.
+In other words, we assume that dividend adjustments, share splits, and other corporate
+events that could mechanically move prices take place overnight. We then accumulate these
+overnight and intraday returns across days in each month t.
+r
+MKT
+intraday,t =
+Y
+s∈t
+(1 + r
+MKT
+intraday,s) − 1,
+r
+MKT
+overnight,t =
+Y
+s∈t
+(1 + r
+MKT
+overnight,s) − 1,
+(1 + r
+MKT
+intraday,t)(1 + r
+MKT
+overnight,t) = (1 + r
+MKT
+t
+).
+3.2 Measuring the Drivers of PE
+We hypothesize that there are different investor clienteles. For example, at a particular point
+in time, one clientele may be bullish on the market, while another clientele may be bearish
+and thus trade in the opposite direction, To the extent that these different clienteles have
+varying degrees of trading intensities during the day versus overnight (i.e. at the market
+open), variation in the relative magnitudes of overnight and intraday returns provides useful
+insights into their collective behavior and subsequent market performance.
+To take this prediction to the data, we define smoothed returns using monthly returns
+as follows:
+EWMAOvernight,t = λrMKT
+Overnight,t + (1 − λ)EWMAOvernight,t−1,
+EWMAIntraday,t = λrMKT
+Intraday,t + (1 − λ)EWMAIntraday,t−1,
+9
+Our results are robust to a reasonable range of smoothing parameters; we set λ equal
+to 1
+120+1 for our analysis which implies a center of mass of ten years and a half-life for the
+resulting weights of approximately 7 years.
+3.3 Other Data
+We measure quarterly consumption growth using the change in log per-capita consumption
+expenditures, on a seasonally-adjusted basis, measured in 1992 dollars. We take P E from
+Shiller’s website but ensure that we remove any interpolation so that the resulting variable
+does not use ex post information. To create Intermediary Risk Tolerance (Intermediary
+RT), we take the intermediary factor from Adrian et al. (2014) and accumulate the resulting
+factor shock to create a level variable. We take individual investor expectations (Indiv.
+Inv. Exp.) for the American Association of Individual Investors from the online appendix of
+Greenwood and Shleifer (2014). We choose this specific variable among many other measures
+of investor expectations because it has the longest history.
+3.4 Summary Statistics
+Table I reports summary statistics of our variables, with two key takeaways. First, the
+average quarterly overnight return is 1.8% while the average quarterly intraday return is 0.
+This finding is consistent with a literature that finds that much of the equity premium is
+earned overnight.7
+Another key takeaway is that the two smoothed past return components – smoothed
+overnight and intraday returns – are only weakly correlated (0.05) with each other. This
+fact suggests a role for each of these two components to capture different aspects of time
+variation in the equity premium.
+7Work by Kelly and Clark (2011) suggests that aggregate stock returns on average are higher overnight
+than intraday. See related work by Branch and Ma (2008), Cliff, Cooper, and Gulen (2008), Tao and Qiu
+(2008), Berkman et al. (2009), Branch and Ma (2012), and Akbas et al. (2019). Lou, Polk, and Skouras
+(2019) note that this effect is concentrated in large stocks.
+10
+Table I Panel A also confirms that the intraday components of returns are more volatile
+than their overnight counterparts. This finding echos the fact that researchers since at least
+Fama (1965) have shown that volatility is higher during trading hours than non-trading
+hours.8 Figure 1 plots our two smoothed return components against P E.
+4 Main Empirical Results
+A well-accepted view in finance is that household risk tolerance / sentiment drives variation in
+the equity premium. Typically, researchers have identified this mean reversion using scaled
+price ratios, like Shiller’s CAPE variable (P E), which measure low-frequency movements
+away from fundamentals. Of course, variation in PE is due to either variation in cumulative
+overnight returns, cumulative intraday returns, or cumulative earnings growth. Indeed, in
+Table II column one, we confirm that these three variables explain 99% of the variation in
+P E. However, though reasonable arguments can be made that P E is stationary, these three
+components are not. As a consequence, we use in our analysis smoothed versions of these
+three components of P E to guarantee stationarity. The rest of the table shows that these
+three smoothed variables explain as much as 88% of the variation in P E. We will show that
+these three smoothed variables differentially forecast subsequent market return components.
+Table III presents several key findings of the paper across three related analyses. In
+Panel A, we forecast close-to-close excess returns; in Panel B, we forecast intraday excess
+returns; and in Panel C, we forecast overnight excess returns. The intraday and overnight
+excess returns are constructed by subtracting 6.5/24 and 17.5/24 respectively of the risk-free
+rate from the corresponding return component. Though we simply allocate the T-bill return
+based on the relative portion of the 24-hour day, that methodological choice does not affect
+our findings to any significant extent, and our results are robust to other ways of allocating
+the risk-free return.
+8See also French (1980) and French and Roll (1986).
+11
+4.1 Strong predictability of the close-to-close equity premium
+Table III Panel A column (1) documents that P E has a tenuous relation with subsequent
+close-to-close returns, at least in our sample, with a t-statistic of only -1.77 and an R2
+of just 3%. Despite this lack of overall return predictability, the rest of the table shows
+that examining P E’s components reveals fascinating insights about the drivers of timeseries variation in the equity premium. Column (2) in the table shows that past smoothed
+intraday returns have an insignificant relation to subsequent close-to-close quarterly returns.
+However, the information in is surprisingly strong, both statistically and economically, which
+is the first key finding of the paper.9 Statistically, the t-statistic is over 5.5, more than three
+times the t-statistic on P E. The R2
+, at 14.1%, is more than four times as large.
+In all of these regressions, the right-hand side variables are normalized for the ease of
+interpretation. Therefore, a one-standard-deviation move in smoothed overnight returns
+forecasts a change in the quarterly equity premium of 3.2%. The third column in the table
+shows the results when we lag the right-hand-side variables by an additional quarter. The
+ability of past smoothed overnight returns to forecast subsequent returns remains strong.
+If we include smoothed earnings growth, there is virtually no change in the point estimate
+of interest. The final column adds several well-known return forecasting variables to the
+regression, the cay of Lettau and Ludvigson (2001), the value spread of Campbell and
+Vuolteenaho (2004), and realized volatility, with our effect subsuming all other variables.10
+9Our decomposition not only reveals striking differences in equity premium dynamics across these two
+parts of the day, it reduces concerns about classic econometric issues associated with forecasting market
+returns. In many time-series tests of return predictability, the forecasting variable is persistent with shocks
+that are correlated with return shocks. In this case, the small-sample p-values obtained from the usual
+student-t test can be misleading (Stambaugh, 1999; Hodrick, 1992, and others). Indeed, Nelson and Kim
+(1993); Ang and Bekaert (2007); Lewellen (2004); Torous et al. (2005); Campbell and Yogo (2006); and
+Polk, Thompson, and Vuolteenaho (2006) all propose sophisticated procedures to deal with the Stambaugh
+(1999) problem. For example, P E in our sample has an AR(1) coefficient of 0.94, and the P E shock has a
+correlation of 0.93 with the corresponding return shock. However, since our decomposition finds that past
+smoothed overnight returns negatively predict intraday returns and since the correlation between overnight
+and intraday returns is close to zero, the Stambaugh size distortions are no longer a concern, alleviating
+worries related to this long-standing econometric issue. Similar considerations apply in all regressions of
+Table III, and we have confirmed that p-values do not change significantly if we apply the correction of Polk,
+Thompson and Vuolteenaho (2006).
+10In untabulated results, we have also confirmed that our findings are robust to controlling for the term
+12
+4.2 Mean reversion intraday and mean aversion overnight
+In the remaining two panels, we decompose the market return on the left-hand side of the
+regression as well. In Panel B of Table III, we forecast intraday excess returns. As can be
+seen in the first column, P E has a strong negative relation with subsequent intraday returns.
+This result suggests that intraday clienteles – institutions, for example – help facilitate the
+well-known mean reversion in aggregate returns.
+Since past smoothed overnight returns track the mean reversion in close-to-close returns,
+we expect that EWMAOvernight also captures the intraday mean reversion weakly identified
+by P E in column (1) of this panel, and column (2) confirms that view. The result that
+the mean reversion linked to past overnight returns primarily occurs intraday is the second
+key finding of the paper. As in Panel A, Column (3) of Panel B shows that these results
+are robust to lagging by an additional quarter, and column (4) shows that adding smoothed
+earnings growth does not change the result qualitatively. Column (5) confirms that the result
+is robust to the inclusion of other return forecasting variables from prior literature.
+Panel C of Table III forecasts overnight returns and presents the third major finding of
+the paper – strong return continuation that happens overnight. Column (1) shows that we
+can measure that overnight return continuation, at least to some degree, with P E. The
+coefficient on P E is positive and significant at the 10% level. Thus, part of the reason that
+P E does a poor job predicting mean reversion in close-to-close market returns is the partially
+offsetting mean aversion that occurs overnight. Our decomposition of P E refines this result
+considerably, as once we decompose P E, it is clear that smoothed intraday returns are what
+drive the overnight continuation. Taken at face value, this finding seems reasonable. Since
+there is more volatility in intraday returns and intraday moves are arguably more salient, one
+might expect intraday returns to drive future household expectations and trading decisions.
+More importantly, our predictability results imply that past smoothed returns primarily
+reflect aggregate cash-flow news, as this variable has little information about subsequent
+spread, the default spread, and the SVIX of Martin (2017).
+13
+close-to-close returns. The notion that investor expectations may be (excessively) driven by
+fundamentals has a long history in behavioral economics. We explore this idea more fully in
+Section 6.
+5 Pricing Tests
+5.1 A Conditional CAPM
+Our next analysis examines the extent to which our powerful conditioning variables (past
+smoothed overnight and intraday market returns) also track variation in CAPM betas. Since
+we have already established that these variables forecast the equity premium, if conditional
+betas comove with the conditional equity premium, alphas in a conditional CAPM analysis
+will change, perhaps significantly so.
+As a baseline, in Table IV Panel A, we show the unconditional CAPM alphas of the Fama
+French size, value, investment, profitability factors as well as an equal-weight average of these
+four factors. We also include a momentum factor and a betting-against-beta strategy. All
+factors are from Ken French’s website.
+In Panel B, we interact the market return with our two lagged conditioning variables.
+These variables are demeaned and standardized to aid in interpretation. The unconditional
+alpha of the composite strategy drops by roughly 84% in magnitude from a significant 84
+bps/quarter to an insignificant 14 bps/quarter once we allow its market beta to vary with
+our conditioning variables. The ability to track the conditional CAPM beta is due to the
+past smoothed overnight market return, with a loading of -0.213 and an associated t-statistic
+of -6.79. In other words, for a one-standard-deviation increase in smoothed overnight market
+returns, the market beta of the composite strategy decreases by 0.213. In contrast to the
+evidence in Lewellen and Nagel (2006), the conditional CAPM does explain the unconditional
+returns of the Fama-French factors, at least over our 22-year sample period.
+Though we also find that momentum’s CAPM beta varies through time, that variation
+14
+is linked to the past smoothed intraday return which we know does not forecast variation in
+the equity premium. As a consequence, there is little reduction in the unconditional alpha
+of the momentum factor within our conditional beta model.
+In Panel C, we also allow the conditional CAPM alphas to vary with our conditioning variables. We find that the conditional CAPM alpha of the equal-weight Fama-French
+four-factor portfolio varies positively with lagged smoothed overnight market returns. In
+contrast, the conditional CAPM alpha of momentum varies positively with lagged smoothed
+intraday market returns. Thus, our conditioning variables also reveal striking time-variation
+in conditional CAPM alphas over this time period.
+5.2 Out-of-sample Market Timing
+In Table V, we examine the economic magnitude of our equity-premium predictability by
+forming a managed portfolio based on EWMAOvernight. We then estimate the alphas of this
+portfolio with respect to the CAPM, the Fama and French (1993) three-factor model, the
+Fama and French (2015) five-factor model, and the Fama-French-Carhart six-factor model
+(i.e., Fama and French’s five-factor model augmented with a momentum factor as in Carhart
+(1997)).
+Column (1) of Panel A shows that a strategy that times the market based on EWMAOvernight
+produces a CAPM alpha of 2.1% per quarter with an associated t-statistic of 2.75. Estimating this alpha out-of-sample (Panel B) reduces the alpha only slightly: the estimate remains
+an economically large 1.6% per quarter with a t-statistic of 2.68. These results are robust to
+controlling for other risk factors. For example, column (4) in Panel A of Table V shows that
+the in-sample six-factor alpha is 1.4% (t-statistic = 3.16) per quarter. The six-factor alpha
+for the out-of-sample strategy remains 1% per quarter with a t-statistic of 2.43.
+15
+6 A Clientele-Based Interpretation
+One interpretation of our findings is that there are different investor clienteles that trade at
+different points in time; some prefer to trade at market open and others at market close.
+In this section, we conduct additional analyses to shed more light on investor heterogeneity
+across the intraday and overnight periods. In particular, we offer four broad pieces of evidence. We first turn to individual investor expectations to study how these beliefs vary with
+past overnight and intraday market returns. We confirm Greenwood and Shleifer’s (2014)
+key conclusion that investors extrapolate past returns when forming expectations; we then
+refine this message with the observation that investors more specifically extrapolate past
+intraday returns. We also show that these expectations positively forecast future overnight
+returns but not future intraday returns.
+Second, we examine two key macro-finance variables that are the focus of many prior
+studies and are also interesting in our context. Specifically, we study the relation between
+intraday/overnight market returns and consumption growth, a classic asset-pricing variable
+that is only weakly linked to close-to-close market returns. We then examine whether a
+measure of intermediary risk tolerance is related to mean reversion in equity returns, and in
+particular, the mean reversion that primarily occurs intraday.
+Third, we estimate a VAR-based return decomposition, following Campbell (1991). This
+technique allows us to decompose discount-rate news into components reflecting revisions
+in expectations of future overnight and intraday returns and to link those components to
+cash-flow news implied by the VAR (i.e., the residual term).
+Fourth, we examine three bubble/crash episodes in the last three decades: the late 1990s
+Tech boom and subsequent bust, the Global Financial Crisis (GFC), and the Covid crash
+and rebound of 2020, all through our clientele prism. The last event is particularly relevant
+as it occurred after the publication of LPS. Anecdotal evidence suggests that the Covid
+lockdown and subsequent aggressive government policies resulted in many households being
+relatively flush with cash and making aggressive investments in the equity market. The
+16
+Covid sub-period thus provides a unique opportunity to confirm when households are more
+likely to trade – overnight or intraday.
+6.1 Individual Investor Expectations
+Greenwood and Shleifer (2014) argue that individual investors extrapolate past returns in
+forming their expectations; this view has been part of an exciting and growing literature in
+behavioral economics. Table VI reports regressions of individual investors’ expectations on
+smoothed overnight and intraday returns. We find that individual investors’ expectations
+vary primarily with EWMAIntraday (column (1)); EWMAOvernight has no explanatory power,
+either in isolation (column (2)) or in tandem (column (3)). The regressions in Table VI
+are contemporaneous; if one lags the right-hand side by a quarter, the same qualitative
+finding holds. This evidence linking survey expectations to a particular component of returns
+is consistent with the idea that individual investors extrapolate news about fundamentals
+(which mainly drive intraday returns, as the results in Table III imply, and we confirm in
+Section 6.3).
+6.2 Macro-finance Variables
+Prior research in asset pricing has trouble linking consumption growth to close-to-close stock
+returns as predicted by theory. Table VII Panel A regresses consumption growth on both
+components of market returns to reveal a strong link between consumption growth and
+overnight returns and no link with intraday returns. Of course, one might worry that consumption data are released with a lag. However, we find a strong relation using consumption
+anywhere from quarter t-2 to quarter t+2. Moreover, our finding is robust to reversing the
+regression specification and instead regressing each component of market returns on consumption growth (Panels B and C). Across leads and lags, and regardless of whether it is
+on the left-hand side or right-hand side, consumption growth has no relation to intraday
+returns and a strong relation to overnight returns.
+17
+Haddad and Muir (2021) argue that shocks to intermediary risk tolerance have little
+predictive power for equity returns, but strong predictive power for returns in intermediated
+markets such as the market for credit default swaps (CDS). We take the intermediary factor
+from Adrian et al. (2014) and accumulate the shocks to back out the level of intermediary
+risk tolerance / risk appetite at each point in time.
+For the sake of comparison, in all panels of Table VIII, we first report in column (1)
+the analysis in column (2) of Table III. Consistent with Greenwood and Shleifer (2014),
+column (2) of Table VIII Panel A confirms that there is no link between individual investor
+expectations and subsequent close-to-close returns, either in isolation or in conjunction with
+the two smoothed components of past market returns. Column (4) shows that consumption
+growth does not forecast subsequent close-to-close returns either. Column (5) shows that
+Intermediary RT is informative, at least in isolation, about close-to-close returns. However,
+column (6) documents that Intermediary RT is driven out by EWMAOvernight.
+Panel B of Table VIII then repeats the exercise in Panel A but replaces the dependent
+variable, next month’s close-to-close return, with the intraday return component. This
+panel shows that the mean reversion picked up in close-to-close returns by Intermediary
+RT is particularly strong intraday. However, EWMAOvernight also subsumes that variable’s
+ability to forecast intraday returns. We continue to find only mean reversion intraday, when
+institutions typically trade. As with close-to-close returns, neither consumption growth nor
+individual investor expectations have any predictive power.
+Finally, in Panel C of Table VIII, we forecast overnight returns and find strong confirming evidence of the importance of the overnight clientele and its reflection of household
+investment decisions. Column (2) of the panel shows that individual investors’ expectations positively forecast subsequent overnight returns in isolation. As might be expected,
+given how noisy these expectation estimates are, they are subsumed by EWMAOvernight and
+EWMAIntraday in column (3). Nevertheless, these results indicate that the expectations
+data studied in Greenwood and Shleifer (2014) not only reveal extrapolation but are also
+18
+informative about the actions these investors take (buying into the market, primarily at the
+open).
+Column (4) shows that consumption growth strongly forecasts subsequent overnight returns, with a t-statistic of 4.88. In column (7), where all of our key variables (smoothed
+overnight and intraday market returns, consumption growth, and intermediary risk tolerance) are included in the regression, the coefficients on past smoothed intraday returns and
+consumption growth remain statistically positive.
+In sum, the return predictability results of individual investor expectations, as well as
+those of our macro-finance variables, all support the notion that overnight returns (and the
+corresponding clientele) are where mean aversion primarily occurs (both individual investor
+expectations and consumption growth positively predict overnight market returns), while
+intraday returns are where mean reversion primarily occurs (both the intermediary risk
+tolerance and household equity share negatively forecast overnight market returns).
+6.3 Decomposing Discount-rate News
+We next conduct a return decomposition exercise, following Campbell (1991). We assume
+that a first-order VAR describes the transition of the state variables where the first and
+second elements are r
+Intraday, the log intraday return in excess of (6.5/24) * log risk-free
+rate, and r
+Overnight, the log intraday return in excess of (17.5/24) * log risk-free rate.
+xt+1 = x¯ + Γ(xt − x¯) + ut+1,
+xt+1 = [r
+Intraday
+t+1 , r
+Overnight
+t+1 ]; rt+1 = r
+Intraday
+t+1 + r
+Overnight
+t+1 .
+These two variables sum up to the excess log return on the market and therefore allow a
+straightforward decomposition of the standard Campbell (1991) discount-rate news term
+into its intraday and overnight components. Importantly, we are decomposing discount-rate
+news that arrives throughout the close-to-close period into components related to news about
+19
+expected intraday and overnight returns (note that this decomposition is not the same as
+measuring whether discount news arrives intraday or overnight).
+rt+1 − Etrt+1 = NCF,t+1 − NDR,t+1,
+NDR,t+1 = N
+Intraday
+DR,t+1 + N
+Overnight
+DR,t+1 ,
+N
+Intraday
+DR,t+1 = (Et+1 − Et)
+X∞
+j=1
+ρ
+j
+r
+Intraday
+t+1+j = e
+0
+1
+X∞
+j=1
+ρ
+jΓ
+jut+1 = e
+0
+1ρΓ(I − ρΓ)
+−1ut+1,
+N
+Overnight
+DR,t+1 = (Et+1 − Et)
+X∞
+j=1
+ρ
+j
+r
+Overnight
+t+1+j = e
+0
+2
+X∞
+j=1
+ρ
+jΓ
+jut+1 = e
+0
+2ρΓ(I − ρΓ)
+−1ut+1.
+As in Campbell (1991), we measure cash-flow news (which technically includes both news
+about dividend growth and news about the log real interest rate) as the residual.
+Table IX Panel A reports estimates of the transition matrix. The findings are broadly
+consistent with the results of Table III which uses simple returns. Table IX Panel B shows
+that cash-flow news has the smallest volatility of the three components. Consistent with
+our interpretation of the data, we find that intraday discount-rate news is significantly more
+volatile than overnight discount-rate news. Moreover, in comparison to a baseline VAR
+(unreported) which simply uses P E to forecast close-to-close returns, there’s a lot more
+discount rate news in total. The two components of discount-rate news are only weakly
+contemporaneously correlated (0.177), far from a perfect correlation.
+Figure 3 provides a graphical view of the forecasts from the VAR and shows how together
+they imply significantly more variation in the close-to-close equity premium than the baseline
+VAR (where we do not include the intraday and overnight components of the market return).
+Perhaps most interestingly, the correlations between two return components and cashflow news change signs as we move from intraday to overnight. Indeed, a regression (not
+tabulated) of N
+Overnight
+DR,t+1 − N
+Intraday
+DR,t+1 on NCF,t+1 has a coefficient of 4.18 with a t-statistic of
+20.95, and an R2 of 83%.
+Moreover, the change in the correlation is consistent with an extrapolation interpretation
+20
+of our findings. For example, after good news about fundamentals arrives, the overnight
+clientele will push prices away from fundamentals, resulting in a positive correlation between
+the discount rate news about future overnight returns and cash-flow news. The intraday
+clientele will pull prices back, hence the negative correlation between the discount rate news
+about future intraday returns and cash-flow news.
+In line with that interpretation, we find that intraday returns are primarily driven by cashflow news while overnight returns are primarily driven by discount-rate news. The correlation
+between cash-flow news and the spread between intraday and overnight realized returns is
+0.76. Since Table VI documents that individual investors expectations are driven by past
+intraday returns, this finding suggests that individual investors extrapolate fundamentals
+rather than returns.
+6.4 The Covid Crash, GFC, and Tech Boom/Bust
+Figure 4 Panel A plots how the intraday and overnight components of market returns moved
+during the Covid crash and rebound of 2020. The patterns in 2020 are stark and confirm
+the importance of our clientele story. The majority of the Covid crash and rebound comes
+overnight. This finding is consistent with anecdotal evidence of increased retail participation
+due to Covid lockdowns.
+We also examine two other well-know bubble/crisis episodes in recent decades through
+our intraday/overnight prism. Figure 4 Panel B plots the intraday/overnight components
+of aggregate returns during the Global Financial Crisis. This event was much more of an
+intraday phenomenon, consistent with declining intermediary risk tolerance playing a key
+role in driving market prices in this episode.
+Figure 4 Panel C uses our approach to study the tech boom and bust of the late 1990s
+and early 2000s. As far back as 1997, intraday returns were flat at best and then became
+slowly negative. In contrast, the striking rise in valuations in this episode is entirely driven
+by overnight returns. This episode highlights how a PE measure based on close-to-close
+21
+market returns effectively combines the much earlier intraday peak in early 1998 with the
+much later overnight peak in 2001.
+Figure F documents that these patterns occur for well-known meme stocks – AMC;
+GameStop; Bed, Bath, and Beyond; and Koss. The patterns in these meme stocks are known
+to be driven by retail investors and their remarkable price spikes occur entirely overnight.
+In contrast, their intraday returns tend to go the opposite way.
+7 Conclusions
+In this paper, we decompose close-to-close market returns into their overnight and intraday
+components, which reveals strong predictability of the equity premium. This phenomenon
+is a much stronger version of the well-known mean reversion in returns linked to the priceearnings ratio. Smoothed overnight returns negatively forecast future close-to-close returns,
+particularly the intraday component. The ability of PE to forecast close-to-close returns is
+hamstrung by the partially-offsetting effect that smoothed intraday returns strongly positively forecast future overnight returns.
+Our decomposition also resurrects the conditional CAPM: If we allow beta to vary with
+past smoothed overnight returns, the unconditional alpha of the four Fama-French nonmarket factors decreases by 84%. Nevertheless, once we also allow CAPM alphas to also
+vary with our conditioning variables, we find that the conditional CAPM alpha of these four
+factors varies positively with smoothed overnight market returns. In contrast, the conditional
+CAPM alpha of the momentum strategy varies positively with smoothed intraday market
+returns.
+We interpret this predictability as the outcome of the interaction of overnight and intraday clienteles and attempt to characterize these clienteles. First, survey evidence reveals that
+retail investor expectations are driven by past intraday market returns but not overnight
+returns. In addition, these expectations positively forecast future overnight returns (but
+22
+not future intraday returns). Second, an analysis exploiting macro-finance variables reveals
+that overnight returns (but not intraday returns) are strongly correlated with consumption
+growth, and that intermediary risk tolerance negatively predict intraday market returns.
+Third, a cash-flow / discount-rate news decomposition reveals that news about future expected overnight returns is positively correlated with cash-flow news, and that news about
+future expected intraday returns is negatively correlated with cash-flow news.
+These facts are consistent with the idea that the overnight clientele extrapolates cashflow news while the intraday clientele pulls prices back. All of these results suggest that the
+overnight clientele has characteristics typically associated with households, and the intraday
+clientele has characteristics associated with institutions, in line with the findings of Lou,
+Polk and Skouras (2019) in a different cross-sectional context. Moreover, our findings help
+resolve a debate in behavioral economics as to whether investors extrapolate fundamentals
+or returns, a distinction that has important policy implications (Fontanier (2022)).
+23
+References
+Adrian, Tobias, Erkko Etula, Tyler Muir, 2014, “Financial Intermediaries and the CrossSection of Asset Returns,” Journal of Finance 69 2557–2596.
+Akbas, Ferhat, Ekkehart Boehmer, Chao Jiang, and Paul Koch, 2019, “Overnight Returns,
+Daytime Reversals, and Future Stock Returns: The Risk of Investing in a Tug of War
+With Noise Traders,” University of Illinois at Chicago Working Paper.
+Ang, Andrew and Geert Beckhart, 2007, “Stock Market Predictability: Is it There?,” Review of Financial Studies 20 651–707.
+Barberis, Nicholas, Robin Greenwood, Lawrence Jin, and Andrei Shleifer, 2018, “Extrapolation and Bubbles,” Journal of Financial Economics 129 203–227.
+Barberis, Nicholas, Andrei Shleifer, and Robert Vishny, 1998, “A Model of Investor Sentiment,” Journal of Financial Economics 49 307–343.
+Bastianello, Francesca and Paul Fontanier, 2022a, “Partial Equilibrium Thinking, Extrapolation, and Bubbles,” University of Chicago Working Paper.
+Bastianello, Francesca and Paul Fontanier, 2022b, “Partial Equilibrium Thinking in General
+Equilibrium,” University of Chicago Working Paper.
+Ben-Rephael, Azi, Shmuel Kandel, and Avi Wohl, 2012, “Measuring Investor Sentiment
+with Mutual Fund Flows,” Journal of Financial and Quantitative Analysis 46 585–
+603.
+Berkman, Henk, Paul D. Koch, Laura Tuttle, and Ying Zhang, 2009, “Dispersion of Opinions, Short Sale Constraints, and Overnight Returns,” University of Auckland Working
+Paper
+Bordalo, Pedro, Nicola Gennaioli, and Andrei Shleifer, 2018, “Diagnostic Expectations and
+Credit Cycles,” The Journal of Finance 73 199–227.
+Branch, Ben and Aixin Ma, 2008, “The Overnight Return, One More Anomaly,” University
+of Massachusetts Working Paper.
+Branch, Ben and Aixin Ma, 2012, “Overnight Return, the Invisible Hand Behind Intraday
+Returns,” Journal of Financial Markets 2 90–100.
+Campbell, John Y., 1991, “A Variance Decomposition for Stock Returns,” Economic Journal 101 157–179.
+Campbell, John Y. and Tuomo Vuolteenaho, 2004, “Bad Beta, Good Beta,” American
+Economic Review 94 1249–1275.
+Campbell, John Y., Stefano Giglio, and Christopher Polk, 2013, “Hard Times,” Review of
+Asset Pricing Studies 3 95–132.
+24
+Campbell, John Y. and Motohiro Yogo, 2006, “Efficient Tests of Stock Return Predictability,” Journal of Financial Economics 81 27–60.
+Carhart, Mark, 1997, “On Persistence in Mutual Fund Performance,” Journal of Finance
+52 57–82.
+Cliff, Michael, Michael Cooper, Huseyin Gulen, 2008, “Return Differences between Trading
+and Non-trading Hours: Like Night and Day,” Virginia Tech working paper.
+Cohen, Randolph B, 2003, “Asset Allocation Decisions of Individuals and Institutions,”
+Harvard Business School working paper.
+Cohen, Randolph B, Paul Gompers, and Tuomo Vuolteenaho, 2002, “Who Underreacts
+to Cash-flow News? Evidence From Trading Between Individuals and Institutions,”
+Journal of Financial Economics 66 409–462.
+DeLong, J. Bradford, Andrei Shleifer, Lawrence H. Summers, and Robert J. Waldmann,
+1990, Positive Feedback Investment Strategies and Destabilizing Rational Speculation,” Journal of Finance 45 379–395.
+Edelen, Roger and Jerold Warner, “Aggregate Price Effects of Institutional Trading: A
+Study of Mutual Fund Flow and Market Returns,” Journal of Financial Economics 59
+195–220.
+Fama, Eugene F., 1965, “The Behavior of Stock-Market Prices,” Journal of Business, 38,
+34–105
+Fama, Eugene F. and Kenneth R. French, 2015, “A Five-factor Asset Pricing Model,”
+Journal of Financial Economics 116 1–22.
+Farhi, Emmanuel and Iv´an Werning, 2016, A Theory of Macroprudential Policies in the
+Presence of Nominal Rigidities,” Econometrica 84 1645–1704.
+Fontanier, Paul, 2022, “Optimal Policy for Behavioral Financial Crises,” Yale University
+Working Paper.
+French, Kenneth R., 1980, “Stock Returns and the Weekend Effect,” Journal of Financial
+Economics 8 55–69.
+French, Kenneth R. and Richard Roll, 1986, “Stock Return Variances: The Arrival of
+Information of the Reaction of Traders,” Journal of Financial Economics 17 5–26.
+Fuster, Andreas, Benjamin Hebert, and David Laibson, 2012, Natural Expectations, Macroeconomic Dynamics, and Asset Pricing,” NBER Macroeconomics Annual 26 1–48.
+Gabaix, Xavier and Ralph Koijen, 2020, “In Search of the Origins of Financial Fluctuations:
+The Inelastic Markets Hypothesis,” University of Chicago Working Paper.
+Gompers, Paul and Andrew Metrick, 2001, “Institutional Investors and Asset Prices,”
+Quarterly Journal of Economics 116 229–259.
+25
+Greenwood, Robin and Andrei Shleifer, 2014, “Expectations of Returns and Expected Returns.” Review of Financial Studies 27 714–746.
+Haddad, Valentin and Tyler Muir, 2021, “Do Intermediaries Matter for Aggregate Asset
+Prices?,” Journal of Finance 76 2719–2761.
+Hodrick, Robert, 1992, “Dividend Yields and Expected Stock Returns: Alternative Procedures for Inference and Measurement,” Review of Financial Studies 5 357–386.
+Hong, Harrison and Jeremy Stein (1999). “A Unified Theory of Underreaction, Momentum
+Trading, and Overreaction in Asset Markets,” The Journal of Finance 54 2143–2184.
+Jagannathan, Ravi and Zhenyu Wang, 1996, “The Conditional CAPM and the Cross-section
+of Stock Returns,” Journal of Finance 51 3–53.
+Kelly, Michael and Steven Clark, 2011, “Returns in Trading Versus Non-Trading Hours:
+The Difference Is Day and Night,” Journal of Asset Management 12 132–145.
+Lettau, Martin and Sydney Ludvigson, 2001, “Consumption, Aggregate Wealth, and Expected Stock Returns,” Journal of Finance 56 815–849.
+Lewellen, Jonathan, 2004, “Predicting Returns with Financial Ratios,” Journal of Financial
+Economics 74 209–235.
+Lewellen, Jonathan and Stefan Nagel, 2006, “The Conditional CAPM Does Not Explain
+Asset-pricing Anomalies,” Journal of Financial Economics 82 289–314.
+Lou, Dong and Christopher Polk, 2022, “Comomentum: Inferring Arbitrage Activity from
+Return Correlations,” Review of Financial Studies 35 3372–3302.
+Lou, Dong, Christopher Polk, and Spyros Skouras, 2019, “A Tug of War: Overnight Versus
+Intraday Expected Returns,” Journal of Financial Economics 134 192–213.
+Martin, Ian, 2017, “What is the Expected Return on the Market?,” Quarterly Journal of
+Economics 132 367–433.
+Nelson, Charles R. and Myung J. Kim, 1993, “Predictable Stock Returns: The Role of
+Small Sample Bias,” Journal of Finance 48 641–661.
+Parker, Jonathan, Antoinette Schoar, and Yang Sun, 2021, “Retail Financial Innovation
+and Stock Market Dynamics: The Case of Target Date Funds,” MIT Working Paper.
+Polk, Christopher, Sam Thompson, and Tuomo Vuolteenaho, 2006, “Cross-sectional Forecasts of the Equity Premium,” Journal of Financial Economics 81 101–141.
+Rabin, Matthew and Dimitri Vayanos (2010). “The Gambler’s and Hot-hand Fallacies:
+Theory and Applications,” The Review of Economic Studies 77 730–778.
+Stambaugh, Robert F., 1999. Predictive Regressions,” Journal of Financial Economics 54,
+375–421.
+26
+Tao, Cai and Mei Qiu, 2008, “The International Evidence of the Overnight Return Anomaly,”
+Massey University working paper.
+Torous, Walter, Rossen Valkanov, and Shu Yan, 2005, “On Predicting Stock Returns with
+Nearly Integrated Explanatory Variables,” Journal of Business 77 937–966.
+Vayanos, Dimitri and Paul Woolley, 2013, “An Institutional Theory of Momentum and
+Reversal,” Review of Financial Studies 26 1087–1145.
+Warther Vincent A., 1995, “Aggregate Mutual Fund Flows and Security Returns,” Journal
+of Financial Economics 39 209–235.
+Wang, Jiang, 1996, “The Term Structure of Interest Rates In A Pure Exchange Economy
+With Heterogeneous Investors,” Journal of Financial Economics 41 75–110.
+27
+Figure 1. This figure shows the PE ratio and smoothed (exponential-weighted 
+average) overnight/intraday returns for the period 1993-2019. 
+Figure 2. The figure shows the time series of smoothed overnight and intraday 
+returns together with our measure of intermediary risk tolerance. 
+Figure 3. The figure shows the time-series of expected overnight and intraday 
+returns from the VAR in Table IX. The first panel plots the time-series of return 
+forecasts while the second panel plots the sum of those component forecasts, 
+comparing it to the close-to-close forecast from a benchmark PE-only VAR. 
+Figure 4 Panel A. This figure plots the cumulative returns of an investment in the 
+stock market (“total” black line), an investment in the market during only 
+overnight periods (“over”, red line), and an investment during only intraday periods 
+(“intra”, green line) in 2020 (the COVID-19 pandemic). 
+Figure 4 Panel B. This figure plots the cumulative returns of an investment in the 
+stock market (“total” black line), an investment in the market during only 
+overnight periods (“over”, red line), and an investment during only intraday periods 
+(“intra”, green line) in the Global Financial Crisis (GFC). 
+Figure 4 Panel C. This figure plots the cumulative returns of an investment in the 
+stock market (“total” black line), an investment in the market during only 
+overnight periods (“over”, red line), and an investment during only intraday periods 
+(“intra”, green line) in the NASDAQ bubble. 
+ 
+Figure 5 Panel A. This figure plots the cumulative log returns of an investment in 
+the AMC (“total” black line), an investment in AMC during only overnight periods 
+(“over”, red line), and an investment during only intraday periods (“intra”, green 
+line) in the meme stock subperiod. 
+Figure 5 Panel B. This figure plots the cumulative log returns of an investment in 
+the GameStop (“total” black line), an investment in GameStop during only 
+overnight periods (“over”, red line), and an investment during only intraday periods 
+(“intra”, green line) in the meme stock subperiod. 
+ 
+Figure 5 Panel C. This figure plots the cumulative log returns of an investment in 
+the Bed, Bath, and Beyond (“total” black line), an investment in Bed, Bath, and 
+Beyond during only overnight periods (“over”, red line), and an investment during 
+only intraday periods (“intra”, green line) in the meme stock subperiod. 
+Figure 5 Panel D. This figure plots the cumulative log returns of an investment in 
+Koss (“total” black line), an investment in Koss during only overnight periods 
+(“over”, red line), and an investment during only intraday periods (“intra”, green 
+line) in the meme stock subperiod. 
+Table I. Summary Statistics 
+This table reports summary statistics of our main variables at the quarterly frequency. RMRF, 
+Intraday RMRF, Overnight RMRF are the quarterly close-to-close, overnight and intraday market 
+returns. PE is the standard price-to-earnings ratio. EWMA Intraday, EWMA Overnight, and 
+EWMA earnings are the exponential weighted moving average of Intraday RMRF, Overnight 
+RMRF, and quarterly earnings growth, all with a half-life of roughly 7 years. CAY and VS are the 
+Lettau and Ludvigson (2001) consumption-to-wealth ratio and the value spread, respectively. 
+RVOL is the realized daily market volatility in the quarter. Cons. Growth is the quarterly 
+consumption growth and Intermediary RT is a measure accumulating the intermediary risk 
+tolerance shocks of Adrian et al. (2014). Panel A reports the summary statistics of our main 
+variables, and Panel B reports the correlation matrix. The sample period is 1993Q3 to 2019Q4.
+Panel A: Summary Statistics 
+mean stdev P25 Median P75 
+RMRF 0.018 0.082 -0.024 0.027 0.061 
+RMRFIntraday 0.000 0.066 -0.040 0.001 0.042 
+RMRFOvernight 0.018 0.045 0.000 0.024 0.042 
+PE 3.404 0.232 3.259 3.395 3.517 
+EWMAIntraday 0.000 0.001 -0.001 0.000 0.001 
+EWMAOvernight 0.005 0.001 0.005 0.005 0.006 
+EWMAEarn 0.013 0.006 0.009 0.013 0.019 
+CAY -0.003 0.016 -0.015 -0.001 0.009 
+VS 1.567 0.178 1.411 1.596 1.680 
+RVOL 1.061 0.571 0.675 0.899 1.303 
+Cons. Growth 0.005 0.005 0.002 0.005 0.007 
+Intermediary RT 0.975 1.689 -0.262 0.808 2.393 
+Panel B1: Correlation Matrix 
+ RMRF RMRFIntra RMRFOver PE EWMAIntra EWMAOver EWMAEarn
+RMRF 1 
+RMRFIntraday 0.84 1 
+RMRFOvernight 0.58 0.05 1 
+PE 0.13 -0.12 0.43 1 
+EWMAIntraday 0.44 0.23 0.46 0.53 1 
+EWMAOvernight -0.22 -0.35 0.13 0.66 -0.07 1 
+EWMAEarn -0.01 -0.06 0.07 0.07 0.50 0.09 1 
+Panel B2: Correlation Matrix 
+ EWMAIntra EWMAOver CAY VS RVOL Cons. 
+Growth Inter. RT 
+EWMAIntra 1 
+EWMAOver -0.07 1 
+CAY -0.39 0.18 1 
+VS 0.28 0.17 -0.55 1 
+RVOL -0.49 -0.03 0.41 0.04 1 
+Cons. Growth 0.55 0.20 0.02 -0.05 -0.41 1 
+Inter. RT 0.18 0.54 0.35 0.07 0.12 0.29 1 
+Table II. Decomposing the PE Ratio 
+This table reports regressions explaining the PE ratio. The dependent variable in all columns is the 
+price-to-earnings ratio in quarter t. The main independent variables are the log cumulative overnight 
+return, the log cumulative intraday return, the log cumulative earning growth, 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧,
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ , and 𝐸𝑊𝑀𝐴௘௔௥௡ . 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ , 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ , and 𝐸𝑊𝑀𝐴௘௔௥௡ are 
+standardized to have a mean of zero and standard deviation of one. Newey-West standard errors 
+with 12 lags are reported below each estimate. *, **, and *** indicate statistical significance at the 
+10%, 5%, and 1% levels, respectively. The sample period is 1997Q3 to 2019Q4 to allow a four-year 
+burn-in period for the calculation of the exponentially weighted moving averages. 
+Decomposing the PE Ratio 
+ [1] [2] [3] [4] [5] [6] 
+𝐿𝑛ሺ𝐶𝑢𝑚𝑅𝑒𝑡௢௩௘௥ሻ 0.98*** 
+ [76.98] 
+𝐿𝑛ሺ𝐶𝑢𝑚𝑅𝑒𝑡ூ௡௧௥௔ሻ 0.98*** 
+ [85.22] 
+𝐿𝑛ሺ𝐸/𝐸଴ሻ -1.00*** 
+ [-78.38] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ 0.15*** 0.16*** 0.17*** 
+[8.32] [13.94] [20.59] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.12*** 0.14*** 0.18*** 
+ [5.92] [11.53] [18.54] 
+𝐸𝑊𝑀𝐴௘௔௥௡ 0.02 -0.09*** 
+ [0.67] [-9.17] 
+ 
+Adj-R2
+ 99.2% 43.4% 27.7% -0.6% 77.4% 88.4% 
+Table III. Forecasting Future Market Returns 
+This table reports regressions forecasting the excess return on the market as well as its intraday 
+and overnight components. PE is the standard price-to-earnings ratio. 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ ,
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬, and 𝐸𝑊𝑀𝐴௘௔௥௡ are the exponential weighted moving average of intraday RMRF, 
+overnight RMRF, and quarterly earnings growth, all with a half-life of roughly 7 years. CAY and 
+VS are the Lettau and Ludvigson (2001) consumption-to-wealth ratio and the value spread, 
+respectively. RVOL is the realized daily market volatility in the quarter. The dependent variable 
+in Panel A is the next-quarter close-to-close excess market return; the dependent variable in Panel 
+B is the next-quarter intraday excess market return, and in Panel C, the dependent variable is the 
+overnight excess market return. All independent variables are standardized to have a mean of zero 
+and standard deviation of one. Newey-West standard errors with 12 lags are reported below each 
+estimate. *, **, and *** indicate statistical significance at the 10%, 5%, and 1% levels, respectively. 
+The sample period is 1997Q3 to 2019Q4 to allow a four-year burn-in period for the calculation of 
+the exponentially weighted moving averages.
+Panel A: Forecasting Excess Market Returns 
+ [1] [2] [3] [4] [5] 
+𝑃𝐸 -0.017* 
+ [-1.77] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.032*** -0.030*** -0.031*** -0.029*** 
+[-5.53] [-5.10] [-5.33] [-3.83] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.006 0.003 0.007 0.010 
+[0.74] [0.50] [0.54] [1.11] 
+𝐸𝑊𝑀𝐴௘௔௥௡ -0.002 
+ [-0.18] 
+𝐶𝐴𝑌 -0.004 
+ [-0.36] 
+𝑉𝑆 -0.007 
+ [-0.64] 
+𝑅𝑉𝑂𝐿 0.007 
+ [0.43] 
+ 
+Adj-R2
+ 3.0% 14.1% 11.7% 13.1% 11.6% 
+Panel B: Forecasting Intraday Excess Market Returns 
+ [1] [2] [3] [4] [5] 
+𝑃𝐸 -0.025*** 
+ [-4.88] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.022*** -0.018*** -0.023*** -0.018*** 
+[-5.67] [-3.31] [-5.86] [-3.94] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ -0.013** -0.011** -0.017* -0.011** 
+[-2.34] [-2.25] [-1.70] [-2.20] 
+𝐸𝑊𝑀𝐴௘௔௥௡ 0.007 
+ [0.74] 
+𝐶𝐴𝑌 -0.013* 
+ [-1.95] 
+𝑉𝑆 -0.004 
+ [-0.59] 
+𝑅𝑉𝑂𝐿 0.011 
+ [0.83] 
+ 
+Adj-R2
+ 14.4% 12.9% 7.9% 12.8% 12.7% 
+Panel C: Forecasting Overnight Excess Market Returns 
+ [1] [2] [3] [4] [5] 
+𝑃𝐸 0.010* 
+ [1.81] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.009* -0.011** -0.008 -0.010** 
+[-1.65] [-2.26] [-1.52] [-2.07] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.020*** 0.015*** 0.025*** 0.022*** 
+[3.96] [3.30] [4.93] [4.01] 
+𝐸𝑊𝑀𝐴௘௔௥௡ -0.010* 
+ [-1.74] 
+𝐶𝐴𝑌 0.009 
+ [1.33] 
+𝑉𝑆 -0.003 
+ [-0.42] 
+𝑅𝑉𝑂𝐿 -0.005 
+ [-0.91] 
+ 
+Adj-R2
+ 3.5% 22.2% 16.5% 24.6% 24.8% 
+Table IV. A Conditional CAPM Model 
+This table reports time-series regressions of common factor returns on market returns. The 
+dependent variables in the first four columns are the monthly returns on the Fama French size, 
+value, investment, profitability factors, respectively. The dependent variable in the fifth column is 
+the equal-weighted average return of the Fama French four factors, the dependent variable in the 
+sixth column is the momentum factor return, and the dependent variable in the seventh column is 
+the betting-against-beta factor return. In Panel A, we simply regress these factor returns on the 
+contemporaneous market return. In Panel B, we also interact the market return with lagged 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ (as conditioning variables, both standardized to mean of zero 
+and standard deviation of 1). In Panel C, we further include lagged 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ in the regression to forecast the conditional CAPM alpha. A four-year burn-in period 
+is used to calculate 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ , so strategy returns cover 1997Q3 to 
+2019Q4. All returns are expressed in percentage terms. 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ are 
+standardized to have a mean of zero and standard deviation of one. Newey-West standard errors 
+with 12 lags are reported below each estimate. *, **, and *** indicate statistical significance at the 
+10%, 5%, and 1% levels, respectively. 
+Panel A: Unconditional CAPM Regressions 
+𝑆𝑀𝐵௧ାଵ 𝐻𝑀𝐿௧ାଵ 𝑅𝑀𝑊௧ାଵ 𝐶𝑀𝐴௧ାଵ 𝐸𝑊 𝐹𝐹 𝑀𝑂𝑀௧ାଵ 𝐵𝐴𝐵௧ାଵ
+ [1] [2] [3] [4] [5] [6] [7] 
+Constant (%) 0.200 0.596 1.602*** 0.959** 0.837** 1.773** 1.746** 
+ [0.41] [0.85] [3.29] [2.16] [2.22] [1.96] [1.99] 
+𝑅𝑀𝑅𝐹௧ାଵ 0.184*** -0.133* -0.380*** -0.156*** -0.121*** -0.357*** -1.024*** 
+[3.27] [-1.70] [-6.82] [-3.08] [-2.81] [-3.45] [-10.19] 
+ 
+Adj-R2
+ 9.9% 2.1% 34.1% 8.8% 7.3% 11.0% 53.9% 
+Panel B: Conditional CAPM Regressions 
+𝑆𝑀𝐵௧ାଵ 𝐻𝑀𝐿௧ାଵ 𝑅𝑀𝑊௧ାଵ 𝐶𝑀𝐴௧ାଵ 𝐸𝑊 𝐹𝐹 𝑀𝑂𝑀௧ାଵ 𝐵𝐴𝐵௧ାଵ
+ [1] [2] [3] [4] [5] [6] [7] 
+Constant (%) -0.080 -0.530 0.879* 0.283 0.138 1.785** 0.887 
+ [-0.15] [-0.87] [1.80] [0.71] [0.42] [2.00] [0.96] 
+𝑅𝑀𝑅𝐹௧ାଵ 0.193*** -0.139** -0.336*** -0.167*** -0.112*** -0.217** -0.971*** 
+[3.14] [-1.97] [-5.93] [-3.62] [-2.94] [-2.10] [-9.03] 
+𝑅𝑀𝑅𝐹௧ାଵ ∗ -0.080 -0.361*** -0.184*** -0.226*** -0.213*** 0.150* -0.218*** 
+𝐸𝑊𝑀𝐴௢௩௘௥,௧ [-1.58] [-6.23] [-3.95] [-5.97] [-6.79] [1.76] [-2.47] 
+𝑅𝑀𝑅𝐹௧ାଵ ∗ 0.003 -0.089 0.057 -0.070* -0.025 0.336*** 0.069 
+𝐸𝑊𝑀𝐴௜௡௧௥௔,௧ [0.06] [-1.47] [1.18] [-1.77] [-0.75] [3.80] [0.75] 
+ 
+Adj-R2
+ 10.5% 34.1% 43.2% 37.7% 39.8% 26.0% 56.1% 
+Panel C: Conditional CAPM with Additional Timing Variables 
+𝑆𝑀𝐵௧ାଵ 𝐻𝑀𝐿௧ାଵ 𝑅𝑀𝑊௧ାଵ 𝐶𝑀𝐴௧ାଵ 𝐸𝑊 𝐹𝐹 𝑀𝑂𝑀௧ାଵ 𝐵𝐴𝐵௧ାଵ
+ [1] [2] [3] [4] [5] [6] [7] 
+Constant (%) -0.151 -0.608 0.844* 0.208 0.073 1.644* 0.809 
+ [-0.30] [-1.00] [1.71] [0.53] [0.23] [1.89] [0.88] 
+𝐸𝑊𝑀𝐴௢௩௘௥,௧ 0.843* 0.815 0.399 0.826** 0.721** 1.445 0.762 
+ [1.70] [1.36] [0.82] [2.13] [2.26] [1.68] [0.84] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔,௧ -1.394*** 0.636 -0.279 -0.010 -0.262 1.760** 1.706** 
+[-2.91] [1.10] [-0.60] [-0.03] [-0.85] [2.13] [1.96] 
+𝑅𝑀𝑅𝐹௧ାଵ 0.256*** -0.115 -0.314*** -0.130*** -0.076* -0.186* -0.969*** 
+[4.09] [-1.53] [-5.12] [-2.67] [-1.90] [-1.72] [-8.50] 
+𝑅𝑀𝑅𝐹௧ାଵ ∗ -0.061 -0.376*** -0.182*** -0.230*** -0.212*** 0.114 -0.249*** 
+𝐸𝑊𝑀𝐴௢௩௘௥,௧ [-1.26] [-6.41] [-3.82] [-6.07] [-6.82] [1.36] [-2.82] 
+𝑅𝑀𝑅𝐹௧ାଵ ∗ 0.032 -0.106* 0.062 -0.072* -0.021 0.291*** 0.028 
+𝐸𝑊𝑀𝐴௜௡௧௥௔,௧ [0.63] [-1.72] [1.25] [-1.82] [-0.64] [3.30] [0.30] 
+ 
+Adj-R2
+ 20.0% 34.8% 42.6% 39.5% 42.6% 30.1% 57.2% 
+Table V. Pricing Tests: In-Sample and Out-of-Sample Evidence 
+This table reports OLS regressions of the returns from a managed investment in the excess market 
+return on various factor models, which use combinations of Fama-French market, size, value, 
+investment, profitability, and momentum factors. In Panel A, the investment in the market is scaled 
+by minus the standardized (mean zero, standard deviation one) exponentially weighted moving 
+average of the overnight return, with a half-life of roughly 7 years. In Panel B, the standardization 
+uses an expanding sample up to the investment date. A four-year burn-in period for the 
+standardization is also used, so strategy returns cover 1997Q3 to 2019Q4. Newey-West standard 
+errors with 12 lags are reported below each estimate. *, **, and *** indicate statistical significance 
+at the 10%, 5%, and 1% levels, respectively. 
+Panel A: In-Sample Analysis 
+ [1] [2] [3] [4] 
+Alpha 0.021*** 0.018*** 0.013*** 0.014*** 
+[2.75] [3.91] [2.99] [3.16] 
+RMRF -0.399** -0.325*** -0.242** -0.265** 
+[-2.12] [-3.00] [-2.09] [-2.32] 
+SMB -0.001 0.027 0.005 
+ [-0.01] [0.20] [0.04] 
+HML 0.538*** 0.313*** 0.252** 
+ [5.22] [2.83] [2.29] 
+RMW 0.170 0.192* 
+ [1.47] [1.82] 
+CMA 0.356* 0.399** 
+ [1.87] [2.03] 
+MOM -0.097 
+ [-1.15] 
+ 
+Adj-R2
+ 24.3% 47.6% 50.0% 50.7% 
+Panel B: Out-of-Sample Analysis 
+ [1] [2] [3] [4] 
+Alpha 0.016*** 0.013*** 0.008** 0.010** 
+[2.68] [3.58] [2.08] [2.43] 
+RMRF -0.494** -0.424*** -0.340** -0.390*** 
+[-2.51] [-3.51] [-2.54] [-2.64] 
+SMB -0.023 0.022 -0.006 
+ [-0.20] [0.15] [-0.05] 
+HML 0.522*** 0.300*** 0.177* 
+ [5.39] [2.71] [1.79] 
+RMW 0.183 0.224** 
+ [1.44] [2.09] 
+CMA 0.338** 0.436*** 
+ [2.32] [2.72] 
+MOM -0.179** 
+ [-1.96] 
+ 
+Adj-R2
+ 34.3% 56.0% 58.2% 62.0% 
+Table VI. Explaining Individual Investors’ Expectations 
+This table reports regressions of individual investors’ expectations on smoothed overnight and 
+intraday returns. The dependent variable in all columns is individual investors’ expectations of 
+future market returns (following Greenwood and Shleifer, 2014). The main independent variables 
+are the smoothed intraday market returns and smoothed overnight market returns measured in the 
+previous quarter. 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ are standardized to have a mean of zero 
+and standard deviation of one. Newey-West standard errors with 12 lags are reported below each 
+estimate. *, **, and *** indicate statistical significance at the 10%, 5%, and 1% levels, respectively. 
+The sample period is 1997Q3 to 2019Q4 to allow a four-year burn-in period for the calculation of 
+the exponentially weighted moving averages.
+Explaining Individual Investors’ Expectations 
+ [1] [2] [3] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.471*** 0.471*** 
+ [3.41] [3.52] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ 0.065 0.059 
+[0.38] [0.52] 
+ 
+Adj-R2
+ 20.8% -1.3% 19.8% 
+Table VII. Consumption Growth and Market Returns 
+This table reports the lead-lag relations between quarterly consumption growth rates and overnight 
+and intraday market returns. In Panel A, the dependent variable is the consumption growth rate 
+measured in quarters t-2 to t+2. The main independent variables are the overnight and intraday 
+components of the excess market return in quarter t. In Panels B and C, the dependent variables 
+are the overnight and intraday components of the excess market return measured in quarters t-2 
+to t+2, respectively, and the main independent variable is the consumption growth rate in quarter 
+t. Newey-West standard errors with 12 lags are reported below each estimate. *, **, and *** indicate 
+statistical significance at the 10%, 5%, and 1% levels, respectively. The sample period is 1993Q3 to 
+2019Q4.
+Panel A: Consumption Growth 
+ t-2 t-1 t t+1 t+2 
+𝑅𝑀𝑅𝐹௜௡௧௥௔ௗ௔௬ -0.031% -0.041% 0.045% 0.041% 0.039% 
+ [-0.64] [-0.84] [0.91] [0.70] [0.81] 
+𝑅𝑀𝑅𝐹௢௩௘௥௡௜௚௛௧ 0.133%*** 0.180%*** 0.183%*** 0.154%** 0.132%** 
+ [2.55] [2.80] [2.55] [2.35] [1.93] 
+ 
+Adj-R2
+ 7.2% 14.9% 15.6% 10.6% 7.4% 
+Panel B: Intraday RMRF 
+ t-2 t-1 t t+1 t+2 
+𝐶𝑜𝑛𝑠. 𝐺𝑟𝑜𝑤𝑡ℎ 0.357% 0.822% 0.710% -0.760% -0.387% 
+ [0.55] [1.14] [1.02] [-0.86] [-0.58] 
+ 
+Adj-R2
+ -0.7% 0.7% 0.2% 0.4% -0.6% 
+Panel C: Overnight RMRF 
+ t-2 t-1 t t+1 t+2 
+𝐶𝑜𝑛𝑠. 𝐺𝑟𝑜𝑤𝑡ℎ 1.327%*** 1.491%*** 1.799%*** 1.855%*** 1.235%*** 
+ [2.84] [3.53] [3.94] [4.88] [2.61] 
+ 
+Adj-R2
+ 8.0% 10.4% 15.6% 16.6% 4.6% 
+Table VIII. Horse Races Forecasting Excess Market Returns 
+This table reports regressions forecasting the excess market returns and its intraday and overnight 
+components. 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ and 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ are the exponential weighted moving average of 
+past overnight RMRF and past intraday RMRF respectively with a half-life of roughly 7 years. 
+Individual Investor Expectations are obtained from the Gallop survey. Cons. Growth is quarterly 
+consumption growth, and Intermediary RT is a measure accumulating the intermediary risk 
+tolerance shocks of Adrian et al. (2014). The dependent variable in Panel A is the next-quarter 
+close-to-close excess market return; the dependent variable in Panel B is the next-quarter intraday 
+excess market return, and in Panel C it is the overnight excess market return. All independent 
+variables are standardized to have a mean of zero and standard deviation of one. Newey-West 
+standard errors with 12 lags are reported below each estimate. *, **, and *** indicate statistical 
+significance at the 10%, 5%, and 1% levels, respectively. The sample period is 1997Q3 to 2019Q4 
+to allow a four-year burn-in period for the calculation of the exponentially weighted moving 
+averages.
+Panel A: Forecasting Excess Market Returns 
+ [1] [2] [3] [4] [5] [6] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.032*** -0.038*** -0.038** 
+ [-5.53] [-5.30] [-5.02] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.006 0.008 0.002 
+ [0.74] [0.75] [0.34] 
+𝐼𝑛𝑑𝑖𝑣.𝐼𝑛𝑣. 𝐸𝑥𝑝. 0.003 0.001 
+[0.28] [0.12] 
+𝐶𝑜𝑛𝑠. 𝐺𝑟𝑜𝑤𝑡ℎ 0.008 0.017 
+ [0.64] [1.42] 
+𝐼𝑛𝑡𝑒𝑟𝑚𝑒𝑑𝑖𝑎𝑟𝑦 𝑅𝑇 -0.021*** -0.009 
+ [-2.82] [-1.11] 
+ 
+Adj-R2
+ 14.1% -1.2% 13.1% -0.3% 5.4% 15.5% 
+Panel B: Forecasting Intraday Excess Market Returns 
+ [1] [2] [3] [4] [5] [6] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.022*** -0.024*** -0.021*** 
+ [-5.67] [-5.21] [-3.70] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ -0.013** -0.019*** -0.014** 
+ [-2.34] [-3.09] [-2.55] 
+𝐼𝑛𝑑𝑖𝑣.𝐼𝑛𝑣. 𝐸𝑥𝑝. -0.010 -0.002 
+[-1.12] [-0.17] 
+𝐶𝑜𝑛𝑠. 𝐺𝑟𝑜𝑤𝑡ℎ -0.010 0.002 
+ [-1.1] [0.21] 
+𝐼𝑛𝑡𝑒𝑟𝑚𝑒𝑑𝑖𝑎𝑟𝑦 𝑅𝑇 -0.017*** -0.003 
+ [-2.64] [-0.45] 
+ 
+Adj-R2
+ 12.9% 0.7% 15.9% 1.4% 5.5% 11.1% 
+Panel C: Forecasting Overnight Excess Market Returns 
+ [1] [2] [3] [4] [5] [7] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.009* -0.013** -0.009* 
+ [-1.65] [-2.42] [-1.97] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 0.020*** 0.027*** 0.012** 
+ [3.96] [4.23] [2.22] 
+𝐼𝑛𝑑𝑖𝑣.𝐼𝑛𝑣. 𝐸𝑥𝑝. 0.014*** 0.004 
+[2.85] [0.79] 
+𝐶𝑜𝑛𝑠. 𝐺𝑟𝑜𝑤𝑡ℎ 0.019*** 0.016*** 
+ [4.88] [3.53] 
+𝐼𝑛𝑡𝑒𝑟𝑚𝑒𝑑𝑖𝑎𝑟𝑦 𝑅𝑇 -0.004 -0.005 
+ [-0.64] [-1.13] 
+ 
+Adj-R2
+ 22.2% 7.3% 33.0% 16.5% -0.4% 28.9% 
+Table IX. Cash-Flow and Discount-Rate News 
+This table reports a vector autoregression (VAR) and the associated Campbell (1991) decomposition 
+of market returns into cash flow and discount rate news, with the latter being further decomposed 
+in to intraday and overnight components. 𝑟௜௡௧௥௔ௗ௔௬ and 𝑟௢௩௘௥௡௜௚௛௧ are, respectively, the quarterly 
+intraday and overnight market returns. 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ and 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ are the exponentially 
+weighted moving average of past 𝑟௜௡௧௥௔ௗ௔௬, and 𝑟௢௩௘௥௡௜௚௛௧, respectively, with a half-life of roughly 7 
+years. Panel A reports the VAR estimates, and Panel B shows the standard deviations and 
+correlations of the various return components. Newey-West standard errors with 12 lags are 
+reported below each estimate. *, **, and *** indicate statistical significance at the 10%, 5%, and 
+1% levels, respectively. The sample period is 1997Q3 to 2019Q4 to allow a four-year burn-in period 
+for the calculation of the exponentially weighted moving averages.
+Panel A: VAR Analysis 
+ 𝑟௜௡௧௥௔ௗ௔௬ 𝑟௢௩௘௥௡௜௚௛௧ 𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ 𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧
+ [1] [2] [3] [4] 
+constant 0.120*** 0.055** 0.096*** 0.040** 
+ [3.46] [2.38] [3.38] [2.02] 
+𝑟௜௡௧௥௔ௗ௔௬ -0.147 0.056 -0.121 0.044 
+ [-1.38] [0.79] [-1.38] [0.73] 
+𝑟௢௩௘௥௡௜௚௛௧ -0.138 0.055 -0.107 0.053 
+ [-0.85] [0.50] [-0.81] [0.58] 
+𝐸𝑊𝑀𝐴௜௡௧௥௔ௗ௔௬ -0.052 0.126*** 0.933*** 0.106*** 
+ [-0.99] [3.56] [21.69] [3.55] 
+𝐸𝑊𝑀𝐴௢௩௘௥௡௜௚௛௧ -0.226*** -0.073* -0.179*** 0.931*** 
+ [-3.52] [-1.70] [-3.41] [25.57] 
+ 
+Adj-R2
+ 13.2% 21.3% 87.6% 89.6% 
+Panel B: Cash Flow vs. Discount Rate News
+News Std. Dev./Corr. 𝑁௖௙ െ𝑁஽ோ_ூ௡௧௥௔ௗ௔௬ െ𝑁஽ோ_ை௩௘௥௡௜௚௛௧
+𝑁௖௙ 1.347% 0.542 -0.696 
+െ𝑁஽ோ_ூ௡௧௥௔ௗ௔௬ 0.542 5.625% 0.177 
+െ𝑁஽ோ_ை௩௘௥௡௜௚௛௧ -0.696 0.177 3.714% 

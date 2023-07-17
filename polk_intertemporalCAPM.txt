@@ -1,0 +1,146 @@
+
+Journal of Financial Economics
+Volume 128, Issue 2, May 2018, Pages 207-233
+Journal of Financial Economics
+An intertemporal CAPM with stochastic volatility☆
+Author links open overlay panelJohn Y. Campbell a b, Stefano Giglio c b, Christopher Polk d, Robert Turley e
+Show more
+Add to Mendeley
+Share
+Cite
+https://doi.org/10.1016/j.jfineco.2018.02.011
+Get rights and content
+Abstract
+This paper studies the pricing of volatility risk using the first-order conditions of a long-term equity investor who is content to hold the aggregate equity market instead of overweighting value stocks and other equity portfolios that are attractive to short-term investors. We show that a conservative long-term investor will avoid such overweights to hedge against two types of deterioration in investment opportunities: declining expected stock returns and increasing volatility. We present novel evidence that low-frequency movements in equity volatility, tied to the default spread, are priced in the cross section of stock returns.
+
+Introduction
+The fundamental insight of intertemporal asset pricing theory is that long-term investors should care just as much about the returns they earn on their invested wealth as about the level of that wealth. In a simple model with a constant rate of return, for example, the sustainable level of consumption is the return on wealth multiplied by the level of wealth, and both terms in this product are equally important. In a more realistic model with time varying investment opportunities, long-term investors with relative risk aversion greater than one (conservative long-term investors) seek to hold intertemporal hedges, assets that perform well when investment opportunities deteriorate. Merton’s (1973) intertemporal capital asset pricing model (ICAPM) shows that such assets should deliver lower average returns in equilibrium if they are priced from conservative long-term investors’ first-order conditions.
+
+Investment opportunities in the stock market can deteriorate either because expected stock returns decline or because the volatility of stock returns increases. The relative importance of these two types of intertemporal risk is an empirical question. In this paper, we estimate an econometric model of stock returns that captures time variation in both expected returns and volatility and permits tractable analysis of long-term portfolio choice. The model is a vector autoregression (VAR) for aggregate stock returns, realized variance, and state variables, restricted to have scalar affine stochastic volatility so that the volatilities of all shocks move proportionally.
+
+Using this model and the first-order conditions of an infinitely lived investor with Epstein and Zin (Epstein, Zin, 1989, Epstein, Zin, 1991) preferences, who is assumed to hold an aggregate stock index, we calculate the risk aversion needed to make the investor content to hold the market index instead of overweighting value stocks that offer higher average returns. We find that a moderate level of risk aversion, around 7, is sufficient to dissuade the investor from a portfolio tilt toward value stocks. Growth stocks are attractive to a moderately conservative long-term investor because they hedge against both declines in expected market returns and increases in market volatility. These considerations would not be relevant for a single-period investor.
+
+We obtain similar results for several other equity portfolio tilts, including tilts to portfolios of stocks sorted by their past betas with market returns. High-beta stocks are attractive to a conservative long-term investor because they have hedged against increases in volatility during the past 50 years. In this way, our model helps to explain the well-known puzzle that the cross-sectional reward for market beta exposure has been low in recent decades.
+
+We also consider managed portfolios that vary equity exposure in response to state variables. The conservative long-term investor we consider would find it attractive to hold a managed portfolio that varies equity exposure in response to time variation in expected stock returns. The reason is that we estimate only a weak correlation between expected returns and volatility, so a market timing strategy does not lead to an undesired volatility exposure.
+
+Following Merton (1973), one could interpret the conservative long-term investor we consider in this paper as a representative investor who trades freely in all asset markets. However, this interpretation has two obstacles. First, our model does not explain why such an agent would not vary equity exposure with the level of the equity premium. Borrowing constraints can fix equity exposure at 100% when they bind, but we estimate that they will not bind at all times in our historical sample. Second, the aggregate stock index we consider here may not be an adequate proxy for all wealth, a point emphasized by many papers, including Campbell (1996), Jagannathan and Wang (1996), Lettau and Ludvigson (2001), and Lustig et al. (2013).
+
+For both these reasons, we interpret our results in microeconomic terms, as a description of the intertemporal considerations that limit the desire of conservative long-term equity investors (including institutions such as pension funds and endowments) to follow value strategies and other equity strategies with high average returns. These considerations can contribute to the explanation of cross-sectional patterns in stock returns in a general equilibrium setting with heterogeneous investors, even if they do not provide a complete explanation in themselves.
+
+Our empirical model provides a novel description of stochastic equity volatility that is of independent interest. Our VAR system includes not only stock returns and realized variance, but also other financial indicators including the price-smoothed earnings ratio and the default spread, the yield spread of low-rated over high-rated bonds. We find low-frequency movements in volatility tied to these variables. While this phenomenon has received little attention in the literature, we argue that it is a natural outcome of investor behavior. Because risky bonds are short the option to default over long maturities, investors in those bonds incorporate information about the long-run component of volatility when they set credit spreads. Univariate volatility forecasting methods that filter only the information in past stock returns fail to extract this low-frequency component of volatility, which is of key importance to long-horizon investors who care mostly about persistent changes in their investment opportunity set.
+
+The organization of our paper is as follows. Section 2 reviews related literature. Section 3 presents the first-order conditions of an infinitely lived Epstein-Zin investor, allowing for a specific form of stochastic volatility, and shows how they can be used to estimate preference parameters. Section 4 presents data, econometrics, and VAR estimates of the dynamic process for stock returns and realized volatility. This section shows the empirical success of our model in forecasting long-run volatility. Section 5 introduces our basic set of test assets: portfolios of stocks sorted by value, size, and estimated risk exposures from our model. This section estimates the betas of these portfolios with news about the market’s future cash flows, discount rates, and volatility and the preferences of a long-term investor that best fit the cross section of excess returns on the test assets. This section also summarizes the history of the investor’s marginal utility implied by our model. Section 6 considers a larger set of equity and non-equity anomalies and asks how much the model of Section 5 contributes to explaining them. Section 7 explores alternative specifications, including the model of Bansal et al. (2014), an alternative representation of our model in terms of consumption, and additional empirical implementations of our approach. Section 8 concludes. An Online Appendix to the paper provides supporting details including a battery of robustness tests.
+
+Section snippets
+Literature review
+Since Merton (1973) first formulated the ICAPM, a large empirical literature has explored the relevance of intertemporal considerations for the pricing of financial assets in general and the cross-sectional pricing of stocks in particular. One strand of this literature uses the approximate accounting identity of Campbell and Shiller (1988b) and the first-order conditions of an infinitely lived investor with Epstein-Zin preferences to obtain approximate closed-form solutions for the ICAPM’s risk 
+
+An intertemporal model with stochastic volatility
+In this section, we derive an expression for the log stochastic discount factor (SDF) of the intertemporal CAPM that allows for stochastic volatility. We then discuss the properties of the model, including the requirements for a solution to exist, the implications for asset pricing, and methods for estimation.
+
+Predicting aggregate stock returns and volatility
+In this section, we present our estimates of the VAR and discuss its predictive ability for returns and volatility.
+
+Estimating the ICAPM using equity portfolios sorted by size, value, and risk
+In this section, we estimate and test the ICAPM with stochastic volatility using various cross sections of equity returns.
+
+An ICAPM perspective on asset pricing anomalies
+In this section, we use our ICAPM model to reassess a wide variety of anomalies that have been discussed in the asset pricing literature. We begin with equity anomalies and then consider some anomalous patterns from outside the equity market.
+
+Alternative specifications and robustness
+In this section, we compare our model with some alternatives that have recently been explored in the literature. We also briefly discuss the robustness of our results to alternative choices in the empirical implementation.
+
+Conclusion
+We extend the approximate closed-form intertemporal capital asset pricing model of Campbell (1993) to allow for stochastic volatility. Our model recognizes that an investor’s investment opportunities can deteriorate either because expected stock returns decline or because the volatility of stock returns increases. A long-term investor with Epstein-Zin preferences and relative risk aversion greater than one, holding an aggregate stock index, wishes to hedge against both types of changes in
+
+References (72)
+R. Baillie et al.
+Fractionally integrated generalized autoregressive conditional heteroskedasticity
+J. Econom.
+(1996)
+T. Bollerslev
+Generalized autoregressive conditional heteroskedasticity
+J. Econom.
+(1986)
+D. Breeden
+An intertemporal asset pricing model with stochastic consumption and investment opportunities
+J. Financ. Econ.
+(1979)
+L. Calvet et al.
+Multifrequency news and stock returns
+J. Financ. Econ.
+(2007)
+J. Campbell
+Stock returns and the term structure
+J. Financ. Econ.
+(1987)
+J. Campbell et al.
+No news is good news: an asymmetric model of changing volatility in stock returns
+J. Financ. Econ.
+(1992)
+A. Christie
+The stochastic behavior of common stock variances: value, leverage, and interest rate effects
+J. Financ. Econ.
+(1982)
+T. Engsted et al.
+Pitfalls in VAR based return decompositions: a clarification
+J. Bank. Financ.
+(2012)
+E. Fama et al.
+Common risk factors in the returns on stocks and bonds
+J. Financ. Econ.
+(1993)
+K. French et al.
+Expected stock returns and volatility
+J. Financ. Econ.
+(1987)
+View more references
+Cited by (168)
+Cross-sectional implications of dynamic asset pricing with stochastic volatility and ambiguity aversion
+2023, North American Journal of Economics and Finance
+Show abstract
+CBDC uncertainty: Financial market implications
+2023, International Review of Financial Analysis
+Show abstract
+US structural drivers of international portfolio returns
+2023, North American Journal of Economics and Finance
+Show abstract
+Who should buy stocks when volatility spikes?
+2022, Journal of Financial Markets
+Show abstract
+Premium for heightened uncertainty: Explaining pre-announcement market returns
+2022, Journal of Financial Economics
+Show abstract
+Which uncertainty measures matter for the cross-section of corporate bond returns? Evidence from the U.S. during 1973–2020
+2022, Finance Research Letters
+Show abstract
+View all citing articles on Scopus
+Recommended articles (6)
+Research article
+Maximum likelihood estimation of the equity premium
+Journal of Financial Economics, Volume 125, Issue 3, 2017, pp. 589-609
+Show abstract
+Research article
+The term structure of returns: Facts and theory
+Journal of Financial Economics, Volume 124, Issue 1, 2017, pp. 1-21
+Show abstract
+Research article
+Stocks with extreme past returns: Lotteries or insurance?
+Journal of Financial Economics, Volume 129, Issue 3, 2018, pp. 458-478
+Show abstract
+Research article
+Carry
+Journal of Financial Economics, Volume 127, Issue 2, 2018, pp. 197-225
+Show abstract
+Research article
+Cash flow duration and the term structure of equity returns
+Journal of Financial Economics, Volume 128, Issue 3, 2018, pp. 486-503
+Show abstract
+Research article
+Absolving beta of volatility’s effects
+Journal of Financial Economics, Volume 128, Issue 1, 2018, pp. 1-15
+Show abstract
+☆
+We are grateful to Torben Andersen, Gurdip Bakshi, John Cochrane, Bjørn Eraker, Bryan Kelly, Ian Martin, Sydney Ludvigson, Monika Piazzesi, Ken Singleton, Tuomo Vuolteenaho, and seminar participants at various venues for comments. We thank Josh Coval, Ken French, Nick Roussanov, Mila Getmansky Sherman, and Tyler Shumway for providing data used in the analysis.
+

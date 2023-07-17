@@ -1,0 +1,217 @@
+What Drives Booms and Busts in Value?
+John Y. Campbell, Stefano Giglio, and Christopher Polk1
+First draft: March 2023
+Abstract
+Value investing delivers volatile returns, with large drawdowns both in periods of strong
+stock market performance such as the technology boom of the late 1990s, and in stock
+market downturns such as the global financial crisis of 2008 and the Covid-19 pandemic of
+2020. This paper interprets the returns to the standard value strategy through the lens of an
+intertemporal CAPM. In this model, the shocks that move value returns include shocks to
+the expected cash flows of the aggregate stock market, shocks to the discount rates applied
+to those cash flows, and shocks to the variance of aggregate market returns. We document
+that these three shocks explain a large fraction (about 50%) of the quarterly returns to value
+investing over the last 60 years. In addition, the paper distinguishes the intra-industry and
+inter-industry components of the value strategy, and finds that average returns, ICAPM risk
+exposures, and the explanatory power of ICAPM shocks for portfolio returns are higher for
+the intra-industry component. Finally, we develop a methodology to perform the ICAPM
+decomposition at the daily frequency, which helps us explain the daily fluctuations in value
+returns during the Covid-19 pandemic period. We find that the ICAPM helps to explain the
+return to intra-industry value during this period, whereas inter-industry value appears to be
+driven in large part by industry-specific earning shocks attributable to the pandemic.
+1Campbell: Department of Economics, Littauer Center, Harvard University, Cambridge MA 02138, and
+NBER. Email john campbell@harvard.edu. Phone 617-496-6448. Giglio: Yale School of Management, 165
+Whitney Ave, New Haven, CT 06520, CEPR, and NBER. Email stefano.giglio@yale.edu. Polk: Department
+of Finance, London School of Economics, London WC2A 2AE, UK, and CEPR. Email c.polk@lse.ac.uk. We
+thank Hongyu Wu for excellent research assistance.
+1 Introduction
+Value investors seek to buy stocks that are cheap in the sense that their market prices are
+low relative to accounting measures of their value. This investment approach has a long
+history predating modern finance theory (see for example Graham, Dodd, and Cottle 1934).
+A value strategy can be implemented using various alternative valuation ratios such as the
+dividend yield, earnings-price ratio, or book-market ratio, but since the influential work of
+Fama and French (1992, 1993) academic research on value has primarily emphasized the
+book-market ratio.2
+If a value strategy uses an accounting measure of a stock’s value that captures its rationally expected future cash flows, discounted at a constant rate, then by the logic of Campbell
+and Shiller (1988a), the corresponding valuation ratio should be a good proxy for the rationally expected long-run return on the stock. This insight implies that a value portfolio
+should contain stocks with high average returns, either because they are risky stocks with
+high equilibrium returns, or because they are stocks that have been underpriced by irrational
+investors.
+Whether value returns are high on average or not, they are very far from riskless. Figure 1
+illustrates this by plotting the return to the standard Fama-French long-short value strategy,
+HML, over the period 1963Q1–2022Q1. The raw quarterly log return to HML is smoothed
+for readability using an exponentially weighted moving average with a half-life of two years.
+The solid black line in the figure shows large swings in HML returns, with value booms in
+the late 1970s, mid 1980s, and mid 2000s, and short but sharp value busts in the early 1970s,
+2Early academic papers on value investing using the dividend yield as a valuation ratio include Litzenberger and Ramaswamy (1982) and Miller and Scholes (1982). Basu (1977, 1983) uses the earnings-price
+ratio, and Stattman (1980) and Rosenberg, Reid, and Lanstein (1985) use the book-market ratio. Goncalves
+and Leonard (2023) propose an alternative way to estimate the fundamental value of a company, that may
+obviate a potential deterioration of book equity as a measure of fundamental value.
+1
+the early 1980s, the early 1990s, the turn of the millennium, the global financial crisis of
+2008-09, and—most striking of all—the Covid-19 pandemic of 2020-21.
+This paper asks what factors drive such booms and busts in value. We make two
+preliminary observations. First, value booms and busts do not line up with returns on the
+aggregate stock market. Figure 1 illustrates this by plotting the log real return on the
+CRSP value-weighted index, smoothed in the same way as the HML return, as a dashed red
+line. The earlier value busts coincide with high aggregate stock returns, but value busts
+in the global financial crisis and the Covid-19 pandemic coincide with sharp declines in the
+aggregate market. Overall, there is little correlation between the two lines in Figure 1,
+consistent with the fact that HML has a negative beta with the aggregate market that is
+close to zero in absolute value.
+Second, value booms and busts primarily result from returns to value within industries.
+We create an intra-industry value strategy that holds stocks whose book-market ratios are
+high relative to other stocks in the same industry.3 We regress HML onto the return of this
+strategy and call the fitted value intra-industry HML, or HMLIntra, and the residual interindustry HML, or HMLInter. With this procedure, HML is the sum of the two components
+and inter-industry HML picks up industry shocks that are orthogonal to intra-industry value
+returns. Figure 2 plots the log returns to HML and its two components over the same
+sample period and using the same smoothing procedure as Figure 1. The importance of
+intra-industry HML, the dashed green line in the figure, is immediately visible. However,
+many value busts do coincide with poor returns to inter-industry HML, the dash-dotted red
+3We are not the first to decompose value into intra- and inter-industry components. Cohen, Polk, and
+Vuolteenaho (2003) provide a variance decomposition of firm-level BE/ME and find “that the book-tomarket effect in returns is mostly an intra-industry effect.” Other papers include Cohen and Polk (1998)
+(the first to study intra- and inter-industry value strategies), Lewellen (1999), and Asness, Porter, and
+Stevens (2000). Daniel, Grinblatt, Titman, and Wermers (1997) use Cohen and Polk’s (1998) adjustment in
+their popular characteristic-based approach to performance evaluation. Industry-adjustment is widely-used
+in practice; see, for example, Israel, Jiang, and Ross (2018), who argue that careful industry adjustment of
+value characteristics is an example of “craftsmanship alpha” that skilled fund managers can provide.
+2
+line, despite the zero unconditional correlation (by construction) between intra-industry and
+inter-industry HML.
+If booms and busts in value are not explained by aggregate stock returns, are there other
+aggregate shocks that do explain them? In this paper we argue that three factors derived
+from data on the aggregate stock market go a long way to explain the volatile history of
+value returns, both to HML itself and particularly to its intra-industry component.
+We measure the aggregate shocks that are relevant for value investors using an intertemporal CAPM (Merton 1973). Specifically, we follow Campbell and Vuolteenaho (CV 2004)
+in distinguishing market cash-flow news (upward revisions in rationally expected market
+dividends, discounted to the infinite future at a constant rate) and negative discount-rate
+news (downward revisions in rationally expected market returns, again discounted to the infinite future at a constant rate). The total return on the market equals cash-flow news plus
+negative discount-rate news, and so a stock’s covariance with the market can be expressed
+as its covariance with cash-flow news plus its covariance with negative discount-rate news.
+Dividing these covariances by the variance of the return on the market, a stock’s beta with
+the market can be written as the sum of its cash-flow and discount-rate betas.
+In a homoskedastic setting, CV show that conservative long-term investors charge a
+different risk price for exposure to these two types of aggregate shocks, with cash-flow beta
+(“bad beta”) commanding a higher price than discount-rate beta (“good beta”). CV further
+show that value stocks have higher cash-flow betas but lower discount-rate betas and overall
+market betas than growth stocks. This pattern may reflect the lower duration of value
+stocks, whose cash flows are concentrated in the near term, relative to growth stocks.4
+According to the CV model, value stocks are likely to underperform in a period when the
+aggregate market is driven down by bad cash flow news, but also in a period when the
+4A recent literature stresses this duration effect. See Dechow, Sloan, and Soliman (2004), Lettau and
+Wachter (2007), Weber (2018), and Gormsen and Lazarus (2021).
+3
+market is driven up by declining discount rates. There need be no strong unconditional
+relationship between value returns and aggregate stock returns since both types of shocks
+affect the aggregate market.
+Campbell, Giglio, Polk, and Turley (CGPT 2018) extend the CV model to include
+shocks to the variance of stock returns. Using a model in which the market return and
+all predictor variables share a common process for volatility, CGPT show that long-run
+market volatility shocks (upward revisions in the rationally expected value of future market
+return variances, discounted to the infinite future at a constant rate) are relevant to longterm investors because they alter the quality of investment opportunities. Conservative
+long-term investors charge a risk price for exposure to volatility shocks that depends on the
+volatility process and risk aversion, but not on any other preference parameters. CGPT
+find that value stocks have lower volatility betas than growth stocks, perhaps reflecting the
+optionality of growth-company investment opportunities that increases the prices of growth
+stocks in an uncertain environment. According to the CGPT model, a period with unusual
+upward shocks to volatility is likely to be a period in which value underperforms.
+In this paper, we estimate the VAR model specified by CGPT, using quarterly data
+from 1926Q3 through 2022Q1. The model generates quarterly news shocks similar to those
+estimated in CV and CGPT.5
+In the period since 1963Q3 where the return to value is
+anomalously high relative to its market beta (the “modern period” studied by CV and
+CGPT), we estimate the betas of HML and its intra-industry and inter-industry components
+with the three shocks to cash flows, discount rates, and volatility. We find similar betas
+for HML to those reported in prior research. A novel result is that intra-industry HML
+5Our approach uses the CGPT unrestricted VAR to measure the three shocks driving value returns. In
+contrast, the structured approach of Campbell, Giglio, and Polk (2013) imposes the cross-sectional restrictions of the two-beta CV ICAPM when estimating the time-series VAR to sharpen equity premium forecasts
+and the resulting decomposition of unexpected market returns into discount-rate and cash-flow news. Given
+our focus on the time-series decomposition of returns (as opposed to the cross-sectional fit of the model), in
+this paper we estimate the VAR from the time-series information alone, as in CGPT.
+4
+has a considerably higher cash-flow beta and considerably lower volatility beta than interindustry HML. Since cash-flow and volatility betas are highly compensated in the ICAPM,
+this pattern helps to explain the higher average return to intra-industry HML than to interindustry HML.
+Over our full sample period since 1963Q3, the three ICAPM shocks explain almost half
+(48%) of the variance of HML, 40% of the variance of intra-industry HML, but only 16%
+of the variance of inter-industry HML. In a more recent sample period starting in 1990,
+the explanatory power of the ICAPM is again 48% for HML and somewhat higher for intraindustry HML at 45%. The ICAPM fit improves for inter-industry HML in this period but
+remains modest at 26%. These statistics suggest that the pattern of ICAPM shocks has the
+potential to explain recent value returns and particularly the returns to intra-industry HML.
+Our ICAPM shocks don’t just provide a statistical fit to HML’s fluctuations: they also
+help us understand the main economic drivers of HML returns. Our analysis identifies what
+news was most important at different times, highlighting that different periods see different
+mixes of the news shocks moving HML. There are periods when different news shocks have
+offsetting effects on HML (for example the 1970s, with cash-flow news offsetting discount
+rate news and variance news), and other periods when all news terms move HML in the
+same direction (for example the technology boom in the late 1990s).
+One particularly interesting event is the Covid-19 pandemic. During the pandemic, all
+three types of news arrived at a rapid pace and market returns were unusually volatile.
+These facts meant that major shocks occurred at a higher frequency than quarterly. To
+understand the returns to value in 2020, we adapt the CGPT framework and estimate a daily
+VAR. We start our sample period at the beginning of 1990 and end at the end of 2022Q1.
+Focusing on this sub-period allows us to include the VIX as an additional state variable
+relevant for predicting future volatility. We show that the daily version of the ICAPM gives
+5
+a good account of HML and intra-industry HML returns throughout this sub-period and
+specifically in 2020. The high-frequency variation of returns in 2020 is primarily driven by
+cash-flow news, because volatility and discount-rate news had largely offsetting effects on
+HML and intra-industry HML.
+While the ICAPM helps us to understand the returns to intra-industry HML, it has
+much lower explanatory power for inter-industry HML. To gain some insight into value
+returns across industries, we measure earnings growth shocks to value industries relative to
+growth industries. We show that the Covid-19 pandemic particularly hurt the earnings of
+value industries, which tend to be physical businesses, relative to growth industries. This
+sectoral shock, rather than an aggregate shock, is the main explanation for the drawdown of
+inter-industry HML in 2020.
+We conclude this introduction with a caveat. Our paper is about the time-series variability of value returns and not about gradual shifts in the average return to value. Many
+commentators have noted that the average return to HML has been lower in recent decades,
+and particularly since the global financial crisis in 2008, than it was in the earlier part of
+our sample period. This fact is clearly visible in Figure 1, and Figure 2 shows that it primarily reflects a lower average return to intra-industry value. It is not clear whether this
+phenomenon reflects a structural shift or simply a sequence of unfavorable shocks to value
+stocks, and we do not seek to resolve this issue here.6
+The organization of the paper is as follows. Section 2 sets up a quarterly VAR model and
+explains how we estimate the three aggregate ICAPM shocks to market cash flows, market
+discount rates, and market variance. Section 3 estimates the betas of HML and its two
+6For example, Fama and French (2020) are unable to reject the hypothesis that the value premium is the
+same in both halves of the July 1963 - June 2019 sample. However, if they forecast the value premium using
+Cohen, Polk, and Vuolteenaho’s (2003) value spread, they do find some evidence of a second-half decline in
+the expected value premium.
+6
+components with these three shocks, and studies the time-series evolution of the ICAPMpredicted returns to HML, intra-industry HML, and inter-industry HML at a quarterly
+frequency. Section 4 sets up a daily model and reestimates the ICAPM shocks at a daily
+frequency. The daily ICAPM is then applied to understand the returns to HML and its two
+components during the Covid-19 pandemic. Section 5 studies the cross-sectional pattern
+of industry earnings shocks in 2020 and argues that this pattern contributed to the poor
+performance of inter-industry HML at that time. Section 6 concludes. An online appendix
+(Campbell, Giglio, and Polk 2023) provides additional supporting evidence.
+2 A Quarterly VAR Model for Aggregate Stock Returns and Volatility
+2.1 News terms and the dynamics of the economy
+In this paper, we build on CGPT (2018) to describe the dynamics of the economy. Like
+them, we assume that the economy is well described by the following first-order vector
+autoregression (VAR):
+xt+1 = ¯x + Γ(xt − ¯x) + σtut+1, (1)
+where xt+1 is an n × 1 vector of state variables which includes the market return rt as its
+first element, ¯x and Γ are an n × 1 vector and an n × n matrix of constant parameters, and
+ut+1 is a vector of shocks to the state variables normalized so that its first element has unit
+variance. As in CGPT, we assume that ut+1 has a constant variance-covariance matrix Σ,
+with element Σ11 = 1, and include σ
+2
+t
+, the variance of returns, in the state vector as the
+second element. We define n × 1 vectors e1 and e2, all of whose elements are zero except for
+a unit first element in e1 and a unit second element in e2. Finally, whereas ut+1 refers to the
+7
+scaled VAR innovations (i.e., normalized by σt), we refer to ηt+1 as the raw, or unscaled,
+VAR innovations: ηt+1 = σtut+1.
+CGPT derive the first-order conditions of a long-term investor with Epstein-Zin utility
+that is holding the market in equilibrium. The paper shows that equilibrium pricing from
+these first order conditions (i.e., the stochastic discount factor associated with this investor’s
+Euler equation) involves three priced shocks: to (aggregate) cash flow news, discount rates,
+and variance. These news terms can be expressed as a function of the VAR parameters:
+NDR,t+1 = e
+′
+1ρΓ(I − ρΓ)
+−1
+| {z }
+λDR
+ηt+1, (2)
+NCF,t+1 =

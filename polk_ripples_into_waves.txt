@@ -1,0 +1,194 @@
+
+Journal of Financial Economics
+Volume 145, Issue 1, July 2022, Pages 217-238
+Journal of Financial Economics
+Ripples into waves: Trade networks, economic activity, and asset prices
+Author links open overlay panelJeffery (Jinfan) Chang a, Huancheng Du b, Dong Lou c, Christopher Polk c
+Show more
+Add to Mendeley
+Share
+Cite
+https://doi.org/10.1016/j.jfineco.2021.08.005
+Get rights and content
+Abstract
+We exploit information in sovereign CDS spreads and the international trade network to provide causal evidence of the propagation of global economic shocks. We show that trade links are an important source of shock transmission using the natural experiments of the Japanese tsunami and the COVID-19 lockdown in China. We then confirm more general and gradual information flows along the trade network by showing extensive country-level credit/equity cross-sectional return predictability. News about country fundamentals flows primarily from importers to exporters, depends on both direct and indirect links in the trade network, and is magnified by the exporting country's financial vulnerability.
+
+Introduction
+A growing number of studies examine the way shocks to individual sectors (Acemoglu et al., 2012) and/or firms (Gabaix, 2011) transmit and consequently aggregate through the corresponding economic network. A key takeaway from these studies is that the nature and structure of the network are of great importance. In stark contrast to Lucas (1977), where microeconomic shocks wash out and have negligible effects on aggregate outcomes, the interconnectedness of sectors and firms provides a network-based view of what drives aggregate fluctuations. However, the way in which shocks propagate across countries remains an important research question in an increasingly interconnected world.
+
+We exploit the international trade network to reveal novel facts about the propagation of country-level shocks across the global macro-economy. In other words, our work adds to the growing number of studies that try to differentiate between the transmission of idiosyncratic shocks and the common exposures to global shocks.1 More specifically, our analysis provides a new perspective on the importance of trade links by exploiting information contained in the sovereign credit default swap (SCDS) contracts on foreign-currency-denominated debt of over 90 developed and developing countries. We argue and show that these relatively liquid assets, compared to sovereign bond markets, provide a useful barometer of a country's well-being.2 This close link to country fundamentals contrasts with equity markets where only a small proportion of volatility comes from cash-flow news (Shiller, 1981).3
+
+We first provide evidence of causal links by studying two natural experiments: the exogenous local shocks of the Japanese tsunami and the COVID-19-driven Wuhan lockdown. On March 11, 2011, a 9.1-magnitude earthquake took place 231 miles northeast of Tokyo. This earthquake was the largest earthquake on record ever to hit Japan and generated a tsunami with waves over 30 feet high, which damaged several nuclear reactors in the area. Conservative estimates indicate nearly 20,000 deaths, 2500 missing persons, and damage from the earthquake/tsunami/radioactivity of over $300 billion. On January 23, 2020, China imposed a strict lockdown in Wuhan and other cities in the Hubei province in an effort to quarantine the outbreak of COVID-19. At the time of the Wuhan lockdown, there were very few diagnosed COVID-19 cases outside of China. Both the Japanese tsunami and the lockdown in China are events that are initially entirely local/idiosyncratic in nature. We exploit this fact to identify the way country-level shocks propagate.
+
+In particular, we study the weeks and days surrounding these two local events, linking SCDS returns to export-based measures of country exposures. We first note that the SCDS spread of both countries increased significantly on the event day, with Japan's spread increasing from 75 to 125 bps and China's spread increasing from 33 to nearly 40 bps. We then exploit the variation in each country's exports to the shocked country (i.e., Japan or China) as a fraction of its total exports in the prior year. Our results show that information flows from both Japan and China to their upstream countries. In particular, the consequences of the local shock can be seen in the cross-section of SCDS returns with both a contemporaneous and a lagged response. Thus, we provide clear evidence that country-level shocks propagate through the trade network, in contrast to the alternative view that countries comove only because of common exposures to aggregate shocks.
+
+We next turn to a broader study of information flows in these markets, exploiting lead-lag return predictability. Specifically, we construct a time-varying matrix, 
+, where each row corresponds to an exporting country and each column corresponds to an importing country. Therefore, each cell contains the fraction of total export accounted for by the importing country. For each country in our sample and in every month, we then calculate the export-weighted average SCDS return of the countries it exports to, namely 
+, where 
+ is the vector of SCDS returns for the countries we study. Thus, our method exploits the time-varying import/export linkages that characterize the international trade network in conjunction with SCDS returns to identify the way in which country-specific information propagates through the global economy.
+
+With this measure, dubbed 
+, for each month, we sort countries based on their 
+ signal and examine the subsequent abnormal returns on their own SCDS. We find that our measure of 
+ has an economically and statistically significant effect on the cross-section of SCDS returns, a fact that is robust to a variety of controls for systematic risk in the SCDS market. For example, the top 20% of countries sorted by 
+ outperform the bottom 20% by 47 bps per month with an associated t-statistic of 3.69, implying an annualized Sharpe ratio of 1.1.
+
+In addition, we document important heterogeneity in this predictability linked to both a country's position in the network, as well as the vulnerability of the country receiving the shock. We find that our effect is stronger for countries on the periphery of the network and those countries that are financially vulnerable. The former effect is consistent with a limited attention argument. The latter effect is true whether we sort on credit quality, leverage, or our vulnerability index, which combines these two measures.
+
+We further show that the returns on these portfolios are not driven by links in the cross-border capital-flow network and are robust to controls for the gravity model of global trade. Moreover, our findings are robust across a variety of subsamples and subperiods. In particular, our results continue to hold when we exclude China; safe haven countries with low SCDS spreads; the G20, the European Union, or OPEC countries; or the smallest or most illiquid countries from the sample. We also find similar effects in the subperiods before and after the Global Financial Crisis. Thus, the predictability caused by trade-network links is not driven by a particular crisis event or a particular subset of countries; instead, our finding is a pervasive phenomenon. Moreover, these abnormal returns do not revert in the long run, consistent with a striking underreaction phenomenon in this global market.
+
+We then turn to analyzing the information contained in the indirect links between countries in the global trade network. The weights of these indirect links are the row elements of 
+. We calculate the export-weighted average SCDS return of a country's indirect links as 
+, which we dub 
+. We then ask the question: To what extent does variation in the credit quality of one's trading partners’ trading partners matter? In regressions with both 
+ and 
+, the SCDS return predictability associated with indirect trade links is roughly as strong as that from direct links. Furthermore, information concerning the quality of one's indirect trading partners takes longer to show up in realized returns than that concerning the quality of one's direct trading partners. These findings are consistent with fundamental shocks, particularly the indirect ones, taking time to work their way around the globe.
+
+If these patterns reflect information about fundamentals, we should see similar predictability in equity markets, since the stock market must ultimately be driven by cash-flow news. A simple equity strategy that buys the 20% of countries with the lowest 
+ and sells the 20% of countries with the highest 
+ earns roughly 1% per month, with an associated t-statistic of 3.26.4 After we adjust for market, value, and two different measures of equity momentum, the resulting four-factor alpha increases to 1.05% and the t-statistic to 3.74. Thus, information about a country's export destinations’ credit quality also helps describe the cross-section of average equity returns. Interestingly, the reverse is not true; that is, if we use export destinations’ equity market returns to compute an otherwise similarly defined 
+, this alternative measure does not forecast the focal country's sovereign credit returns. In other words, sovereign credit markets incorporate information faster than equity markets.
+
+Finally, we provide evidence that 
+ indeed contains information about real economic activity that is directly relevant to a country's sovereign credit risk. We start by showing that a country's SCDS return, 
+, forecasts its own imports; in other words, if a country is performing relatively poorly in terms of credit quality, its future imports are relatively low. Building on this result, we then use a country's 
+ to forecast its subsequent export growth, GDP growth, and changes in the external-debt-to-GDP ratio, which is more directly related to a country's sovereign credit risk. We show that 
+ indeed predicts the country's export growth, GDP growth, and changes in the country's external-debt-to-GDP ratio.
+
+In summary, we provide causal evidence of country-level information flows through the trade network in the SCDS market. This information is distinct from other possible network effects. News about one's trading partners affects a country's export activity, GDP growth, external-debt-to-GDP, SCDS spread, and stock market return. As the trade network is continually evolving and the typical country has many trading partners, who in turn have many trading partners, our analysis reveals a novel mechanism by which many small ripples of information turn into a wave of return predictability across countries.5
+
+Our primary contribution is to the emerging literature that argues that the network of economic activity is important. Barrot and Sauvagnat (2016) show that the specificity of intermediate inputs allows firm idiosyncratic shocks to propagate in the supply-chain network by exploiting data on supplier-customer relations among US publicly listed firms. For example, disruptions to suppliers caused by natural disasters lead to a two to three percentage point drop in customers’ sales growth; this negative shock further spills over to other suppliers of the same customer due to the complementary nature of intermediate inputs. Carvalho et al. (2021) provide evidence of both upstream and downstream shock propagation using Japanese input-output data. They document a 3.6% (2.9%) decline in the sales growth of firms whose suppliers (customers) were hit by the 2011 Japanese earthquake. In aggregate, this natural disaster caused a 0.47% decline in Japan's real GDP in the following year. Unlike these papers that study firm linkages, we focus on understanding the country-level international trade network. In doing so, we provide the first macroeconomic confirmation that uses forward-looking financial variables to show the importance of trade networks to country-level shock propagation in a global setting.
+
+Our work also has a strong connection to the literature on international business cycle fluctuations. These studies argue that countries that trade more with each other have more correlated business cycles (e.g., Frankel and Rose 1998). The mechanisms underlying such correlation is a key question in the empirical macro literature. In particular, researchers ask whether the increased correlation arises from the prevalence of common shocks hitting countries that trade more together and thus increasing business cycle comovement of countries or from the propagation of country-specific shocks through the trade channel (Imbs, 2004). Our two natural-experiment tests show the causal importance of country-specific shocks along the trade network, and our methodology provides a general way to aggregate information in either fundamentals or prices in order to compare the importance of different network links. Moreover, given the fact that stock market cycles and business cycles have only a loose correlation (Fama and French, 1989), our insights regarding the importance of the SCDS market may facilitate progress in the international business cycle literature.
+
+Exploiting financial data to identify the propagation of macroeconomic activity via networks is an additional important contribution of our work to this growing literature. Previous studies that focus on accounting/macro data are hamstrung by the fact that accounting realizations, such as sales or GDP, contain a large predictable component and are the result of activity only over the accounting quarter/year in question (so low frequency). In contrast, our approach allows us to examine the importance of the trade network not only at a higher frequency (which helps with identification) but also by using forward-looking asset prices, which should capitalize news about the value of information contained in these links. Indeed, recognizing these links allows us to describe novel variation in risk and in the average return for the cross-section of country-level equity and credit markets.
+
+This paper also contributes to the growing literature on sovereign credit by illustrating a new information-discovery mechanism in the SCDS market. While Pan and Singleton (2008), Longstaff et al. (2011), Xiao et al. (2021), and Augustin and Tedongap (2016) document the comovement of SCDS prices with global systemic risk factors, others focus on the relation between SCDS prices and country-specific risk. Acharya et al. (2014) illustrate the way the financial strain of the contingent debt burden arising from public bank bailouts may feed into sovereign credit risk. Aizenman et al. (2013) show that country-specific macroeconomic risk also feeds into the SCDS spread. Lee et al. (2016) document that SCDS spreads are related to the degree of property and creditor rights protection and the disclosure requirements. Complementary to these domestic financial, macroeconomic, and institutional factors, we find that the credit quality of a country's export destinations also plays an important role in determining its SCDS spread.
+
+Our paper also sheds light on the way sovereign credit risk spills over across countries. The majority of the existing literature focuses on the sovereign credit risk spillover occurring during the European debt crisis, a time of high volatility and comovement. For example, Beirne and Fratzscher (2013) attribute the cross-country sovereign credit risk spillover during those times to investors’ increased sensitivity to country-specific fundamentals. In contrast, our paper shows that sovereign credit risk spillover exists not just in crisis states, but also in normal times, and that spillover comes, at least in part, through the global trade network. Moreover, export destination credit risk can be spread not only through direct trade links but also through indirect trade links.
+
+This paper further contributes to the literature on investors’ limited attention and information processing capacity. Our findings provide insight on the extent to which macroeconomic information slowly diffuses in the financial derivative markets, which is complimentary to prior studies on the diffusion of firm information in the stock market (e.g., DellaVigna and Pollet 2007, Cohen and Frazzini 2008, Cohen and Lou 2012, Albuquerque et al. 2015, Xiao et al. 2021 and Wang et al. 2021). Our findings show that even financial derivative markets, often presumed to be more efficient in aggregating information than stock markets (e.g., Easley et al. 1998 and Pan and Poteshman 2006), are subject to investors’ limited attention.
+
+Finally, this paper relates to the informational role of derivatives markets. A large literature studies the way information flows across markets. For instance, Black (1975) emphasizes that the embedded leverage in most derivatives allows investors to trade their information more efficiently. Nevertheless, there remains a debate on the direction of information flow between derivative markets and the market for the underlying asset. On the one hand, Acharya and Johnson (2007) find that the corporate CDS market forecasts future negative credit events. Furthermore, Lee et al. (2021) show that information in the corporate CDS market can be used to improve the price momentum strategy of Jegadeesh and Titman (1993). Xiao et al. (2021) find that the SCDS market forecasts stock markets and economic activities across countries with the predictive power coming almost entirely from the global, rather than country-specific, information from the sovereign CDS market. On the other hand, Hilscher et al. (2015) find evidence that information flows from the equity market to the corporate CDS market. Our paper contributes to this debate by providing additional evidence that SCDS contains information about trade that is gradually incorporated into country-level returns.
+
+The remainder of the paper is organized as follows. Section 2 describes our data. Section 3 examines responses of SCDS spreads to two natural experiments. Section 4 documents slow transmissions of export destination news, and Section 5 discusses the underlying economic mechanisms. We conclude the paper in Section 6.
+
+Section snippets
+Sovereign credit default swaps
+Our SCDS data are from Markit, which collects daily SCDS quotes from major SCDS dealers and publishes the average SCDS spread following a careful data validation procedure.6 Our sample covers 88 sovereign
+
+Two natural experiments
+To show that patterns in the SCDS market are consistent with country shocks propagating through the network, we examine two natural experiments in Table 2. Panels A1 and A2 document the ripple effect of the Japanese triple-disasters (earthquake, tsunami, and radioactive fallout) in March 2011 while Panels B1 and B2 document the ripple effect of the Wuhan COVID-19 lockdown in January 2020. In the right side of each panel, we focus on the three weeks surrounding the event. In Panels A1 and A2, we 
+
+Slow transmission of information: forecasting SCDS returns
+Generalizing the results in Table 2, we now show that trade networks cause countries to (ultimately) move together by exploiting the fact that abnormal return predictability can reflect information flow. In particular, if information concerning export destination countries’ quality is relevant for exporting countries’ CDS prices but is only gradually incorporated into prices, then 
+ should predict the exporting country's SCDS returns. Given that even the quite salient Japanese tsunami
+
+The underlying mechanism
+Having established return predictability linked to 
+, we dig deeper into understanding the mechanisms through which information is incorporated in prices. In this section, we explore whether the predictability in SCDS returns that we document is driven by investors’ inattention, whether 
+ also predicts cross-sectional variation in average country-level equity returns, and whether the information in 
+ can be traced back to information about fundamentals. We also examine the
+
+Conclusions
+We introduce a novel way of tracing the propagation of country-level shocks in the global trade network. Our analysis provides a new perspective on the importance of trade links by exploiting information contained in sovereign credit default swap (SCDS) contracts. Our novel approach reveals that trade links play a significant role in driving global SCDS returns, with information flowing from importers to exporters.
+
+We first use two natural experiments (the Japanese tsunami and the Wuhan COVID-19 
+
+References (46)
+V. Acharya et al.
+Insider trading in credit derivatives
+J. Financ. Econ.
+(2007)
+J. Aizenman et al.
+What is the risk of European sovereign debt defaults? Fiscal space, CDS spreads and market pricing of risk
+J. Int. Money Financ.
+(2013)
+R. Albuquerque et al.
+Trade credit and cross-country predictable firm returns
+J. Financ. Econ.
+(2015)
+P. Barroso et al.
+Momentum has its moments
+J. Financ. Econ.
+(2015)
+J. Beirne et al.
+The pricing of sovereign risk and contagion during the European sovereign debt crisis
+J. Int. Money Financ.
+(2013)
+J. Campbell et al.
+An intertemporal CAPM with stochastic volatility
+J. Financ. Econ.
+(2018)
+L. Cohen et al.
+Complicated firms
+J Financ. Econ.
+(2012)
+E. Fama et al.
+Business conditions and expected returns on stocks and bonds
+J. Financ. Econ.
+(1989)
+R. Lucas
+Understanding business cycles
+Carnegie Rochester Conf. Ser. Public Policy
+(1977)
+L. Menkhoff et al.
+Currency momentum strategies
+J. Financ. Econ.
+(2012)
+View more references
+Cited by (5)
+What can we learn from the convenience yield of Bitcoin? Evidence from the COVID-19 crisis
+2023, International Review of Economics and Finance
+Show abstract
+The Transmission Mechanisms of International Business Cycles: International Trade and the Foreign Effects of US Monetary Policy
+2023, IMF Economic Review
+Do Financial Liabilities Matter in “Size Effect”? Evidence from the Chinese A-Share Market
+2023, Sustainability (Switzerland)
+Commodity network and predictable returns
+2023, Journal of Futures Markets
+From fears to recession? Time-frequency risk contagion among stock and credit default swap markets during the COVID pandemic
+2022, International Journal of Finance and Economics
+Recommended articles (6)
+Research article
+Time-varying risk of nominal bonds: How important are macroeconomic shocks?
+Journal of Financial Economics, Volume 145, Issue 1, 2022, pp. 1-28
+Show abstract
+Research article
+Gravity, counterparties, and foreign investment
+Journal of Financial Economics, Volume 145, Issue 2, Part A, 2022, pp. 132-152
+Show abstract
+Research article
+Paying for beta: Leverage demand and asset management fees
+Journal of Financial Economics, Volume 145, Issue 1, 2022, pp. 105-128
+Show abstract
+Research article
+Recovering the FOMC risk premium
+Journal of Financial Economics, Volume 145, Issue 1, 2022, pp. 45-68
+Show abstract
+Research article
+The value of intermediation in the stock market
+Journal of Financial Economics, Volume 145, Issue 2, Part A, 2022, pp. 208-233
+Show abstract
+Research article
+When Uncle Sam introduced Main Street to Wall Street: Liberty Bonds and the transformation of American finance
+Journal of Financial Economics, Volume 145, Issue 1, 2022, pp. 194-216
+Show abstract
+We thank John Campbell, Vasco Carvalho, Randy Cohen, ML Cooper, Wenxin Du, Andrea Frazzini, Julian di Giovanni, Christian Julliard, Kalina Manova, Stuart McDonald, Veronica Rappoport, Robert Ready, Iván Rodríguez, Alireza Tahbaz-Salehi, Tuomo Vuolteenaho, as well as seminar participants at Aalto University, Arrowstreet Capital, Barclays Capital, Chinese University of Hong Kong (Shenzhen), HEC Paris, London Business School, London School of Economics, New York Federal Reserve, Renmin University, Tsinghua University, UBS, University of British Columbia, University of Geneva, the 2018 Brazilian Finance Association Annual Meeting, the 2018 Finance UC Conference, the 2018 FIRS Conference, and the 2019 American Finance Association Annual Meeting for helpful comments. Jeffery (Jinfan) Chang, a.k.a. Jinfan Zhang, appreciates help from friends and colleagues at the International Monetary Fund (IMF) and acknowledges financial support from the National Natural Science Foundation of China (under Project Number 71,733,004). Lou and Polk are grateful for funding from the Paul Woolley Center at the LSE. All remaining errors are our own. An earlier draft of this paper was circulated under the title “Trade Networks and Asset Prices: Evidence from the SCDS Market.”
+
+View full text
+© 2021 Elsevier B.V. All rights reserved.
+Elsevier logo with wordmark
+About ScienceDirect
+Remote access
+Shopping cart
+Advertise
+Contact and support
+Terms and conditions
+Privacy policy
+We use cookies to help provide and enhance our service and tailor content and ads. By continuing you agree to the use of cookies.
+
+Copyright © 2023 Elsevier B.V. or its licensors or contributors. ScienceDirect® is a registered trademark of Elsevier B.V.
+
+RELX group home page
+Feedback
